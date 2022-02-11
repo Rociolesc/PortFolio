@@ -15,5 +15,5 @@ window.addEventListener('scroll', function(){
 	});
 
 window.onbeforeunload = function () {
-  window.scrollTo(169, 409);
+  window.scrollTo(0, 0);
 }
