@@ -1,9 +1,7 @@
 body{
 	background:#aaa ;
 }
-p{
-	font-size:10em;
-}
+
 .nav{
 	position: fixed;
 	top: 0;
@@ -90,7 +88,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18040b",endCo
 
 .cuerpo{
 	top: 0px;
-	background: #eee;
+	background: rgb(165, 165, 165);
 	z-index: 100;
 	width: 100%;
 	height: 100em;
@@ -109,4 +107,40 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18040b",endCo
 	left: 10%;
 
 }
-
+.foto__perfil{
+	position: absolute;
+	width:30%;
+	height: 30%;
+	margin-top: 20%;
+	left: 60%;
+	object-fit: cover;
+	
+	z-index: 30;
+}
+.foto__perfil img{
+	border: #3c0824 5px solid;
+	
+	border-radius: 90%;
+}
+.cuadro1{
+	display: inline-block;
+	position: absolute;
+	background: #f8f;
+	padding: 15% 15% 15% 15%;
+	margin-top: 3%;
+	right: 1%;
+	z-index: 20;
+	
+}
+.cuadroTexto1{
+	position: relative;
+	background: #fff;
+	width: 70%;
+	top: 15%;
+	padding: 5% 5% 8% 5%;
+	pa
+	
+}
+.cuadroTexto1 p {
+	font-size: 2vw;
+}
