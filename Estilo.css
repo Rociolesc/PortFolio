@@ -1395,21 +1395,25 @@ html, body {
 	margin-left: 10px;
 	z-index: 10;
 }
-.nav__li--redes img {
+.linkedin {
 	position: absolute;
-	right:240px;
+	right:280px;
 	top: 10px;
 	width: 60px;
 	height: 60px;
+	z-index: 62;
 }
 .nav__li--inisioSesion{
 	color: #fff;
 	position: absolute;
 	background: #5C9F9E;
 	right:100px ;
-	top: 1vw;
-	padding: 10px 8px 10px 8px;
+	top: 14px;
+	font-size: 25px;
+	height: 50px;
+	width: 150px;
 	float: right;
+
 	
 }
 header{
@@ -1421,7 +1425,7 @@ header{
 	position: relative;
 	justify-content: center;
 	z-index: 30;
-	top: 4em;
+	top: 5em;
 	text-justify: auto;
 	text-align: center;
 
@@ -1476,4 +1480,83 @@ header{
 	left: 155px;
 	transform: rotate(270deg);
 	z-index:50;
+	
+}
+.banner__ingreso--de--dato{
+	
+	top: -500px;
+	opacity: 0;
+	display: inline-block;
+	background-color: rgba(28, 26, 26, 0.7);
+	position: fixed;
+	height: 500px;
+	width: 500px;
+
+}
+.datos__ol {
+	position: relative;
+	margin-top: 120px;
+	list-style: none;
+	font-size: 40px;
+}
+.datos__ol p{
+	color: rgba(16, 255, 226, 1);
+	margin-top: 60px;
+}
+.inp{
+	width: 400px;
+	height: 30px;
+	
+}
+.botones__datos{
+	display:	inline-block;
+	width: 150px;
+	font-size: 30px;
+}
+
+.nav__li--redes:hover > div .logGit {
+	
+	top: 190px;
+	padding-top: 15px;
+	
+}
+.nav__li--redes:hover > div  .logGem {
+	top: 130px;
+	padding-top: 10px;
+	
+}
+.nav__li--redes:hover > div  .logInsta {
+	top: 70px;
+	padding-top: 5px;
+}
+.logInsta{
+	position: absolute;
+	right:280px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	transition: all 0.5s ;
+	z-index: 59;
+	
+}
+.logGem{
+	position: absolute;
+	right:280px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	transition: all 0.7s ;
+	z-index: 58;
+	
+}
+
+.logGit{
+	position: absolute;
+	right:280px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	transition: all 0.9s ;
+	z-index: 57;
+	
 }
