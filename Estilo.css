@@ -17,6 +17,7 @@ html, body {
 	margin: -0.2vw 0 0 9.8vw;
 	animation: ease 200s alternate infinite;
 	pointer-events: none;
+	z-index: 1;
   }
   .firefly::before, .firefly::after {
 	content: "";
@@ -1373,12 +1374,11 @@ html, body {
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
+.head{
+	border: #9f5c7e 5px solid;
+	width: 100%;
+	height: 100vh;
+}
 .nav{
 	width: 100%;
 	z-index: 500;
@@ -1459,19 +1459,24 @@ header{
 	background:	rgb(66,62,61);
 	z-index:59;
 }
+.menu a{
+	text-decoration: none;
+}
 .li__menu{
 	background: rgb(86,83,82);
-	font-size: 30px;
-	padding: 28px 22px 30px 35px;
+	padding: 28px 1px 30px 35px;
 	margin-top: 5px;
-	color: rgba(16, 255, 226, 1);
 	z-index:55;
+	width: 200px;
+	color: rgba(16, 255, 226, 1);
+	font-size: 30px;
 }
+
 .marker{
 	display: inline-block;
 	background: rgb(66,62,61);
 	color: aliceblue;
-	position: relative;
+	position: absolute;
 	text-align: center;
 	width: 100px;
 	padding: 20px 0px 10px 0px;
@@ -1559,4 +1564,42 @@ header{
 	transition: all 0.9s ;
 	z-index: 57;
 	
+}
+.li__menu:hover{
+	background: rgb(121, 116, 115);
+	margin-right: -3px;
+	width: 203px;
+}
+.sec{
+	border: #5C9F9E 5px solid;
+	display:grid;
+	margin-top: 25vh;
+	grid-template-rows: repeat(5, 120vh);
+	justify-items: center;
+	
+}
+
+.sec article{
+	display: grid;
+	position: relative;
+	width: 70%;
+	border: #9f5c7e 5px solid;
+	background: rgba(28, 26, 26, 0.74);
+	z-index: 500;
+	justify-items: start;
+}
+
+.foto__perfil{
+	position: absolute;
+	margin-top: 55px;
+	margin-left: 55px;
+	border-radius: 90%;
+	width: 170px;
+	height: 170px;
+}
+.mi__nombre{
+	font-size: 35px;
+	margin-top: 100px;
+	margin-left: 135px;
+	color: rgba(16, 255, 226, 1);
 }

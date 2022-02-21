@@ -1,7 +1,9 @@
-var buttonMenu = document.getElementById("button__menu");
-var menu = document.getElementById("menu");
+const buttonMenu = document.getElementById("button__menu");
+const menu = document.getElementById("menu");
 let  click=0;
 buttonMenu.onclick = function(){
+    
+
     if ( click == 0){
     menu.style.left="1px";
 	click++;
@@ -13,12 +15,11 @@ buttonMenu.onclick = function(){
      
 };
 
-var buttonInisioSesion= document.getElementById("button__sesion");
-var sesion= document.getElementById("sesion");
-var circuloFondo= document.getElementById("banner__circulo")
-var sesion= document.getElementById("sesion");
-var buttonCancelar= document.getElementById("cancelar__datos")
-let  click2=0;
+let buttonInisioSesion= document.getElementById("button__sesion");
+let circuloFondo= document.getElementById("banner__circulo");
+let  sesion= document.getElementById("sesion");
+let buttonCancelar= document.getElementById("cancelar__datos")
+var  click2=0;
 buttonInisioSesion.onclick = function(){
     if ( click2 == 0){
     sesion.style.opacity="1";
