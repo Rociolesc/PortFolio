@@ -2,6 +2,15 @@ html, body {
 	height: 100%;
 	
   }
+  img{
+	border-style: none;
+	max-width: 100%;
+	}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
   
   body {
 	background-image: url(fondo__bosque.jpg);
@@ -1411,7 +1420,7 @@ html, body {
 .linkedin {
 	position: relative;
 	right:280px;
-	top: 0px;
+	top: 14px;
 	width: 60px;
     height: 60px;
 
@@ -1420,7 +1429,7 @@ html, body {
 .logInsta{
 	position:absolute;
     right:280px;
-	top: 16px;
+	top: 14px;
 	width: 60px;
 	height: 60px;
 	transition: all 0.5s ;
@@ -1430,7 +1439,7 @@ html, body {
 .logGem{
 	position: absolute;
 	right:280px;
-	top: 16px;
+	top: 14px;
 	width: 60px;
 	height: 60px;
 	transition: all 0.7s ;
@@ -1441,7 +1450,7 @@ html, body {
 .logGit{
 	position: absolute;
 	right:280px;
-	top: 16px;
+	top: 14px;
 	width: 60px;
 	height: 60px;
 	transition: all 0.9s ;
@@ -1457,7 +1466,7 @@ html, body {
 	right:100px ;
 	top: 14px;
 	font-size: 20px;
-	height: 50px;
+	height: 60px;
 	width: 150px;
 	float: right;
 
@@ -1481,7 +1490,7 @@ header{
 	list-style: none;
 	background:	rgb(66,62,61);
 	z-index:849;
-	width: 160px;
+	width: 200px;
    
 	
 }
@@ -1493,9 +1502,9 @@ header{
 	background: rgb(86,83,82);
 	padding: 25px 0px 25px 30px;
 	margin-top: 5px;
-	margin-left: -40px;
+	
 	z-index:55;
-	width: 170px;
+	width: 200px;
 	color: rgba(16, 255, 226, 1);
 	font-size: 30px;
 }
@@ -1503,7 +1512,7 @@ header{
 	position: relative;
 	height: 90px;
 	width: 180px;
-	margin-left: -40px;
+	
 	z-index: 10;
 }
 
@@ -1537,24 +1546,18 @@ header{
 	transition-duration: 0.5s;
     z-index: 830;
 }
-#topBanner img{
-    width: 50px;
-	height: 50px;
-    position: relative;
-    
-    
-}
+
 .li__menu:hover{
 	background: rgb(121, 116, 115);
-	padding-right: 3px;
+	width: 205px;
 	
 }
 .banner__conten{
 	display: flex;
 	position: relative;
 	justify-content: center;
-	
 	top: 5em;
+	
 	
 	
 
@@ -1572,14 +1575,14 @@ header{
 }
 .banner__hijo h1{
 	position: relative;
-	padding-top:118px;
+	padding-top:158px;
 text-align: center;
 	font-size: 70px;
 }
 .banner__ingreso--de--dato{
 	
 	top: -500px;
-	opacity: 0;
+	opacity: 1;
 	display: inline-block;
 	background-color: rgba(28, 26, 26, 0.7);
 	position: fixed;
@@ -1617,7 +1620,7 @@ text-align: center;
 }
 #cancelar__datos{
     position: absolute;
-    margin-top: -40px;
+    margin-top: -39px;
     margin-left: 250px;
 }
 .botones__datos{
@@ -2018,10 +2021,10 @@ text-align: center;
 	outline: #4d9c9b 5px solid;
 	margin-top: 60px;
 	width: 50vw;
-	height: 500px;
+	height: 450px;
 	border-radius: 30px;
 	background: rgb(87,83,82);
-background: linear-gradient(50deg, rgba(87,83,82,1) 0%, rgba(74,111,105,1) 52%, rgba(21,223,197,1) 100%);
+	background: linear-gradient(50deg, rgba(87,83,82,1) 0%, rgba(74,111,105,1) 52%, rgba(21,223,197,1) 100%);
 	
 }
 .contacto__form div{
@@ -2029,24 +2032,26 @@ background: linear-gradient(50deg, rgba(87,83,82,1) 0%, rgba(74,111,105,1) 52%, 
 }
 .nombreYemail input{
     position: absolute;
-	width:24vw ;
+	width:24.1vw ;
 	height: 40px;
 	margin-top: 15px;
 }
 #contacto__nombre{
-    left: 10vw;
+    left: 10.8vw;
 }
 #contacto__email{
     float: right;
-    right:10vw;
+    right:10.8vw;
 }
 #contacto__asunto{
 	width: 48.58vw;
-    margin-top: 80px;
+	height: 30px;
+    margin-top: 70px;
 }
 #contacto__mensaje{
 	width: 48.58vw;
-	height: 200px;
+	height: 220px;
+	margin-top: -25px;
 }
 .botones__contacto input{
 	width:12.14vw;
