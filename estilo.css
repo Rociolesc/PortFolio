@@ -1681,14 +1681,28 @@ text-align: center;
 	height: 10vh;
 	left:90px;
 }
-.col__perfil img{
+/*------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+(PERFIL)---------------------------------*/
+.col__perfil {
+	height: 120vh;
+
+}
+.foto__cont{
+	position: absolute;
 	margin-left: 40px;
 	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+}
+.foto__perfil{
+	
 	border: rgb(89,156,152) 5px solid;
 	border-radius: 90%;
 	width: 200px;
 	height: 200px;
-	position: absolute;
+	position: relative;
 	z-index: 400;
 }
 .cont__info-perfil{
@@ -1702,11 +1716,10 @@ text-align: center;
 .info__perfil{
 	position: absolute;
     display: inline-block;
-	margin-top: 70px;
-	margin-left: 270px;
+	margin-top: 90px;
+	margin-left: 180px;
+	padding-left: 10vw;
     padding-right: 13vw;
-    
-	
 }
 .info__perfil h2{
 	color: rgb(17,254,225);
@@ -1716,6 +1729,11 @@ text-align: center;
 	color: rgb(243,243,243);
     font-size: 30px;
 }
+/*-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+(FORMACION)---------------*/
+
 .utn__logo{
 	margin-top: 30px;
 	width: 100px;
@@ -1766,7 +1784,7 @@ text-align: center;
 	text-align: center;
 	z-index: 400;
 }
-.imgNacional__cont img{
+.imgNac{
 	margin-top: 30px;
 	width: 100px;
 	height: 100px;
@@ -1804,7 +1822,7 @@ text-align: center;
 	text-align: center;
 	z-index: 400;
 }
-.imgArP__cont img{
+.imgArP{
 	margin-top: 35px;
 	width: 110px;
 	height: 90px;
@@ -2058,4 +2076,398 @@ text-align: center;
 	height: 50px;
 	font-size: 2.43vw;
 }
+/*----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+(botones de edit)------*/
+.edit__banner{
+	display: inline-block;
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: 100px;
+	margin-left: 150px;
+	text-align: center;
+	opacity: 1;
+	
+}
+.icon__edit{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__banner-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	margin-top:100px ;
+	margin-left: 145px;
+	opacity: 0;
+}
+.edit__banner-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	margin-left: 5px;
+	background: #1C1A1A;
+	
+}
+
+.icon__X{
+position: absolute;
+}
+
+.edit__perfil{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	margin-left: 43vw;
+	text-align: center;
+	opacity: 1;
+	
+}
+.icon__edit-perfil{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__perfil-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	margin-top:-30px ;
+	margin-left: 37vw;
+	opacity: 0;
+}
+.edit__perfil-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	margin-left: 0px;
+	background: #1C1A1A;
+	
+}
+
+.icon__X-perfil{
+position: absolute;
+margin-top: 50px;
+}
+
+.edit__FotoPer{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -220px;
+	margin-left: -18px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	
+}
+.icon__edit-foto{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__FotoPer-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	margin-top: -35px;
+	margin-left: -190px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__FotoPer-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-foto{
+position: absolute;
+margin-top: 50px;
+margin-left: -100px;
+}
+
+.edit__utn{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	right: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-utn{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__utn-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -50px;
+	right: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__utn-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-utn{
+position: absolute;
+margin-top: 50px;
+}
+
+.edit__utnImg{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	left: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-utnImg{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__utnImg-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -40px;
+	left: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__utnImg-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-utnImg{
+position: absolute;
+margin-top: 50px;
+margin-left: -100px;
+}
+
+
+.edit__nac{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	right: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-nac{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__nac-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -50px;
+	right: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__nac-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-nac{
+position: absolute;
+margin-top: 50px;
+}
+
+.edit__nacImg{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	left: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-nacImg{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__nacImg-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -40px;
+	left: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__nacImg-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-nacImg{
+position: absolute;
+margin-top: 50px;
+margin-left: -100px;
+}
+
+.edit__ArP{
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	right: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-ArP{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__ArP-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -50px;
+	right: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__ArP-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-ArP{
+position: absolute;
+margin-top: 50px;
+}
+
+.edit__ArPImg{
+	display: inline-block;
+	position: absolute;
+	border-radius: 90% ;
+	background:rgba(28, 26, 26);
+	outline: rgb(34, 243, 243)3px solid;
+	width: 50px;
+	height: 50px;
+	margin-top: -20px;
+	left: -20px;
+	text-align: center;
+	opacity: 1;
+	z-index: 350;
+	float: right;
+	
+}
+.icon__edit-ArPImg{
+	width: 25px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -10px;
+	
+}
+.edit__ArPImg-2{
+	display: inline-block;
+	position: absolute;
+	width: 50px;
+	top: -40px;
+	left: 10px;
+	opacity: 0;
+	z-index: 350;
+}
+.edit__ArPImg-2 img{
+	display: inline-block;
+	outline: rgb(34, 243, 243)3px solid ;
+	border-radius: 90px;
+	background: #1C1A1A;
+	
+}
+.icon__X-ArPImg{
+position: absolute;
+margin-top: 50px;
+margin-left: -100px;
+}
+
 

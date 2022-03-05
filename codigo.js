@@ -49,11 +49,29 @@ buttonCancelar.onclick = function(){
     elementosFondo.style.opacity="1"
     fondoSec.style.opacity="1"
     click2=0;
-	
+    
 	 }
     else{
        console.log("none")
      };
      
 };
+/*
+let perfil= document.getElementById("Perfil")
+const ubi= window.pageYOffset;
+window.onscroll=function (){
+    let ubi2 = window.pageYOffset;
+    let Ubicacion = window.pageYOffset; 
 
+    if (ubi<ubi2 ){
+        perfil.style.top="-150vh";
+        circuloFondo.style.opacity="0";
+        
+    }
+    if(ubi2 > (1000)){
+        console.log("Jeje")
+    }
+
+    
+}
+*/
