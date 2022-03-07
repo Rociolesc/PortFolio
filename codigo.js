@@ -56,6 +56,7 @@ buttonCancelar.onclick = function(){
      };
      
 };
+
 /*
 let perfil= document.getElementById("Perfil")
 const ubi= window.pageYOffset;
