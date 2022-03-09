@@ -60,15 +60,16 @@
             <a href="#top"id="topBanner"><img src="flechas2.png"></a>
         </header>
         <div class="banner__conten" id="banner">
-			<div class="banner__hijo" id="banner__circulo">
-                <div class="edit__banner" id="LogoEdit">
+			<div class="banner__hijo" ondblclick="recOrig()"id="banner__circulo">
+               <h1 id="contEditBann">Hello,<br>i’am Rocío</h1>
+                <div class="edit__banner" id="LogoEdit" onclick="editar()" >
                     <img class="icon__edit" src="editar.png">
                 </div>
-                <div class="edit__banner-2">
-                    <img class="icon__palomita"  src="cheque.png">
-                    <img class="icon__X" src="eliminar.png">
+                <div class="edit__banner-2" id="editBanner2">
+                    <img class="icon__palomita" Id="checkBanner" onclick="check()"  src="cheque.png">
+                    <img class="icon__X" onclick="xEdit()"  src="eliminar.png">
                 </div>
-			<h1>Hello,<br>i’am Rocío</h1>
+			    
 			</div>
 			<div class="banner__ingreso--de--dato" id="sesion">
 				<form class="datos__ol" method="post">
@@ -338,5 +339,6 @@
         </section>
 
         <script src="codigo.js"></script>
+        <script src="contentEditable.js"></script>
     </body>
 </html>
