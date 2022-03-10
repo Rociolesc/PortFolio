@@ -1717,8 +1717,8 @@ text-align: center;
 .info__perfil{
 	position: absolute;
     display: inline-block;
-	margin-top: 90px;
-	margin-left: 180px;
+	margin-top: 10px;
+	margin-left: 50px;
 	padding-left: 10vw;
     padding-right: 13vw;
 }
@@ -2070,9 +2070,39 @@ text-align: center;
 .icon__X{
 position: absolute;
 }
+.edit__banner-inp{
+	display: inline-block;
+	position: absolute;
+	
+	margin-left: 180px;
+	margin-top: -90px;
+	
+}
+.edit__banner-inp input {
+	
+	width: 35px;
+	height: 30px;
+}
 
+#editBanColor{
+	
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 10px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+#editColFont{
+	display: none;
+}
+
+#px{
+	display: none;
+}
 .edit__perfil{
-	display:none;
+	display:inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
@@ -2093,7 +2123,7 @@ position: absolute;
 	
 }
 .edit__perfil-2{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	width: 50px;
 	margin-top:-20px ;
@@ -2158,14 +2188,14 @@ margin-left: -100px;
 }
 
 .edit__F{
-	display:none;
+	display:block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top: -20px;
+	top: -30px;
 	right: -20px;
 	text-align: center;
 	z-index: 350;
@@ -2180,7 +2210,7 @@ margin-left: -100px;
 	
 }
 .edit__F-2{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	width: 50px;
 	top: -50px;
@@ -2242,7 +2272,7 @@ margin-top: 50px;
 margin-left: -100px;
 }
 .edit__H{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
@@ -2261,7 +2291,7 @@ margin-left: -100px;
 	margin-left: -10px;
 }
 .edit__H-2{
-	display:none;
+	display:inline-block;
 	position: absolute;
 	width: 50px;
 	top: -50px;
@@ -2279,6 +2309,7 @@ position: absolute;
 margin-top: 50px;
 margin-left: -100px;
 }
+
 .edit__FP{
 	display: none;
 	position: absolute;
