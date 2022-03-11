@@ -62,16 +62,16 @@
         <div class="banner__conten" id="banner">
 			<div class="banner__hijo" ondblclick="recOrig()"id="banner__circulo">
                <h1 id="contEditBann">Hello,<br>i’am Rocío</h1>
-                <div class="edit__banner" id="LogoEdit" onclick="editar()" >
+                <div class="edit__banner" id="LogoEdit" onclick="editar(0)" >
                     <img class="icon__edit" src="editar.png">
                 </div>
                 <div class="edit__banner-2" id="editBanner2">
-                    <img class="icon__palomita" Id="checkBanner" onclick="check()"  src="cheque.png">
+                    <img class="icon__palomita" Id="checkBanner" onclick="check(0)"  src="cheque.png">
                     <img class="icon__X" onclick="xEdit()"  src="eliminar.png">
                 </div>
-                <div class="edit__banner-inp" id="editColFont">
-                    <input id="editBanColor" type="color" onclick="editColor()" value="#10FFE2"><br>
-                    <input id="editBanFont" type="number" value="70"><div id="px">px</div>
+                <div class="edit__banner-inp" id="editColFontBanner">
+                    <input id="editBanColor" type="color"  value="#10FFE2"><br>
+                    <input id="editBanFont" type="number" value="70">
                 </div>
 			    
 			</div>
@@ -108,17 +108,26 @@
                     </div>
                         
                     <div class="cont__info-perfil"> 
-                        <div class="info__perfil">
+                        <div id='contEditPerfil'class="info__perfil">
                        
-                            <h2>Rocio Lescano</h2>
-                            <h3>Full Stack Developer Jr</h3>
+                            <h2 id="colorFontPerfil1">Rocio Lescano</h2>
+                            <h3 id="colorFontPerfil2">Full Stack Developer Jr</h3>
+                            <p id="colorFontPerfil3">#</p>
                         </div>
                         <div class="edit__perfil">
                             <img class="icon__edit-perfil" src="editar.png">
                         </div>
-                        <div class="edit__perfil-2">
+                        <div class="edit__perfil-2"id='editPerfil2'>
                             <img class="icon__palomita-perfil"  src="cheque.png">
                             <img class="icon__X-perfil" src="eliminar.png">
+                        </div>
+                        <div class="edit__perfil-inp" id="editColFontPerfil">
+                            <input id="editPerColor" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input id="editPerColor2" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input id="editPerColor2" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input id="editPerFont" type="number" value="70"><br>
+                            <input id="editPerFont2" type="number" value="70"><br>
+                            <input id="editPerFont3" type="number" value="70">
                         </div>
                     </div>
                         
@@ -144,18 +153,24 @@
                     </div>
                 </div>
                     <div class="cont__info-utn"> 
-                        <div>
-                        <h4>3/2019 - Actialmente</h4>
-                        <p >   Ingeniería Química - Universidad Tecnológica Nacional.</p>
+                        <div id="contEditFormUtn">
+                        <h4 id="colorFontFUtn1">3/2019 - Actialmente</h4>
+                        <p id="colorFontFUtn2">   Ingeniería Química - Universidad Tecnológica Nacional.</p>
                         </div>
                         <div class="edit__F">
                             <img class="icon__edit-F" src="editar.png">
                         </div>
-                        <div class="edit__F-2">
+                        <div class="edit__F-2" id="editFormUtn">
                             <img class="icon__palomita-F"  src="cheque.png">
                             <img class="icon__X-F" src="eliminar.png">
                         </div>
-                        
+                        <div class="edit__F-inp" id="editColFontFUtn">
+                            <input class="edit__FColor"id="editFUtnColor" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FColor2"id="editFUtnColor2" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FFont"id="editFUtnFont" type="number" value="70"><br>
+                            <input class="edit__FFont2" id="editFUtnFont2" type="number" value="70"><br>
+                           
+                        </div>
                     </div>	
                 <div class="cont__img">        
                     <div class="imgNacional__cont" id ="img__formacion">
@@ -170,16 +185,23 @@
                     </div>
                 </div>
                     <div class="cont__info-nac">
-                        <div>
-                            <h4> 03/2013 – 12/2017</h3>
-                            <p>Bachiller en Ciencias Naturales – General José de San Martin.</p>
+                        <div id="contEditFormNac">
+                            <h4 id="colorFontFNac1"> 03/2013 – 12/2017</h3>
+                            <p id="colorFontFNac2">Bachiller en Ciencias Naturales – General José de San Martin.</p>
                         </div>
                         <div class="edit__F">
                             <img class="icon__edit-F" src="editar.png">
                         </div>
-                        <div class="edit__F-2">
+                        <div class="edit__F-2" id="editFormNac">
                             <img class="icon__palomita-F"  src="cheque.png">
                             <img class="icon__X-F" src="eliminar.png">
+                        </div>
+                        <div class="edit__F-inp" id="editColFontFNac">
+                            <input class="edit__FColor"id="editFUtnColor" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FColor2"id="editFUtnColor2" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FFont"id="editFUtnFont" type="number" value="70"><br>
+                            <input class="edit__FFont2" id="editFUtnFont2" type="number" value="70"><br>
+                           
                         </div>
                         
                     </div>
@@ -197,18 +219,24 @@
                     </div>
                 </div>
                     <div class="cont__info-ArP">
-                        <div>
-                            <h4> 02/02/2022 – 31/08/2022</h3>
-                            <p>Certificacion Full Stack Jr- INTI</p>
+                        <div id="contEditFormArP">
+                            <h4 id="colorFontFArP1"> 02/02/2022 – 31/08/2022</h3>
+                            <p id="colorFontFArP2">Certificacion Full Stack Jr- INTI</p>
                         </div>
                         <div class="edit__F">
                             <img class="icon__edit-F" src="editar.png">
                         </div>
-                        <div class="edit__F-2">
+                        <div class="edit__F-2" id="editFormArP">
                             <img class="icon__palomita-F"  src="cheque.png">
                             <img class="icon__X-F" src="eliminar.png">
                         </div>
-                       
+                        <div class="edit__F-inp" id="editColFontFArP">
+                            <input class="edit__FColor"id="editFUtnColor" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FColor2"id="editFUtnColor2" type="color" onclick="editColor()" value="#10FFE2"><br>
+                            <input class="edit__FFont"id="editFUtnFont" type="number" value="70"><br>
+                            <input class="edit__FFont2" id="editFUtnFont2" type="number" value="70"><br>
+                           
+                        </div>
                     </div>	
                 </article>
             </div >

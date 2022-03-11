@@ -1575,6 +1575,9 @@ header{
 }
 .banner__hijo h1{
 	
+	width: 495px;
+	overflow-y: auto;
+	height: 200px;
 	position: relative;
 	margin-top:158px;
 text-align: center;
@@ -2071,7 +2074,7 @@ text-align: center;
 position: absolute;
 }
 .edit__banner-inp{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	
 	margin-left: 180px;
@@ -2094,12 +2097,11 @@ position: absolute;
 	border: rgb(34, 243, 243)3px solid;
     border-radius: 90%;
 }
-#editColFont{
-	display: none;
-}
 
-#px{
-	display: none;
+#editBanFont{
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: -20px;
+
 }
 .edit__perfil{
 	display:inline-block;
@@ -2143,6 +2145,55 @@ position: absolute;
 position: absolute;
 margin-top: 60px;
 margin-left: -50px;
+}
+.edit__perfil-inp{
+	display: inline-block;
+	position: absolute;
+	
+	margin-top:97px ;
+	right: -21px;
+	
+}
+.edit__perfil-inp input {
+	
+	width: 35px;
+	height: 30px;
+}
+
+#editPerColor{
+	
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+#editPerColor2{
+	
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+#editPerFont{
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+
+}
+#editPerFont2{
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+
+}
+#editPerFont3{
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+
 }
 
 .edit__FotoPer{
@@ -2228,7 +2279,58 @@ margin-left: -100px;
 position: absolute;
 margin-top: 50px;
 }
+.edit__F-inp{
+	display: inline-block;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
 
+
+.edit__FColor{
+	
+	position: absolute;
+	right: 55px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+.edit__FColor2{
+	position: absolute;
+	right: -56px;
+	top:114px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+.edit__FFont{
+	position: absolute;
+	top: 12px;
+	right: 115px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 35px;
+	height: 30px;
+}
+.edit__FFont2{
+	position: absolute;
+	right: -46px;
+	top:175px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 35px;
+	height: 30px;
+}
 .edit__FImg{
 	display:none;
 	position: absolute;
