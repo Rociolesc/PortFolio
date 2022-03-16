@@ -1718,6 +1718,9 @@ text-align: center;
 	margin-top: 90px;
 }
 .info__perfil{
+	width: 42vw;
+	height: 490px;
+	overflow: auto;
 	position: absolute;
     display: inline-block;
 	margin-top: 10px;
@@ -1732,6 +1735,10 @@ text-align: center;
 .info__perfil h3{
 	color: rgb(243,243,243);
     font-size: 30px;
+}
+.info__perfil p {
+	color: #000000;
+	font-size: 20px;
 }
 /*-------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
@@ -2125,7 +2132,7 @@ position: absolute;
 	
 }
 .edit__perfil-2{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	width: 50px;
 	margin-top:-20px ;
@@ -2147,7 +2154,7 @@ margin-top: 60px;
 margin-left: -50px;
 }
 .edit__perfil-inp{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	
 	margin-top:97px ;
@@ -2171,6 +2178,16 @@ margin-left: -50px;
     border-radius: 90%;
 }
 #editPerColor2{
+	
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+#editPerColor3{
 	
 	height: 55px;
 	width: 55px;
@@ -2261,7 +2278,7 @@ margin-left: -100px;
 	
 }
 .edit__F-2{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	width: 50px;
 	top: -50px;
@@ -2280,7 +2297,7 @@ position: absolute;
 margin-top: 50px;
 }
 .edit__F-inp{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	
 	top: -55px;
@@ -2381,10 +2398,14 @@ margin-left: -100px;
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top:-40px;
+	margin-top:-60px;
 	left: -30px;
 	text-align: center;
 	z-index: 350;
+}
+#hh{
+	position: absolute;
+	margin-top:-80px;
 }
 .icon__edit-H{
 	width: 25px;
@@ -2543,6 +2564,69 @@ margin-top: 60px;
 margin-left: -50px;
 
 }
+
+.edit__H-inp{
+	display: inline-block;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HColor{
+	
+	position: absolute;
+	right: 80px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HFont{
+	position: absolute;
+	top: 110px;
+	right: 195px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
+.edit__HRES-inp{
+	display: inline-block;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HRESColor{
+	
+	position: absolute;
+	right: 80px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HRESFont{
+	position: absolute;
+	top: 110px;
+	right: 195px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
+
+
 
 @media only screen and (max-width:837px){
  
