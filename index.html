@@ -124,7 +124,7 @@
                         <div class="edit__perfil-inp" id="editColFontPerfil">
                             <input id="editPerColor" type="color"  value="#11fee1"><br>
                             <input id="editPerColor2" type="color"  value="#f3f3f3"><br>
-                            <input id="editPerColor3" type="color" value="##000000"><br>
+                            <input id="editPerColor3" type="color" value="#000000"><br>
                             <input id="editPerFont" type="number" value="40"><br>
                             <input id="editPerFont2" type="number" value="30"><br>
                             <input id="editPerFont3" type="number" value="20">
@@ -167,8 +167,8 @@
                         <div class="edit__F-inp" id="editColFontFUtn">
                             <input class="edit__FColor"id="editFUtnColor" type="color" value="#dddddd"><br>
                             <input class="edit__FColor2"id="editFUtnColor2" type="color"  value="#17d6c3"><br>
-                            <input class="edit__FFont"id="editFUtnFont" type="number" value="25.7"><br>
-                            <input class="edit__FFont2" id="editFUtnFont2" type="number" value="25.7"><br>
+                            <input class="edit__FFont"id="editFUtnFont" type="number" value="26"><br>
+                            <input class="edit__FFont2" id="editFUtnFont2" type="number" value="26"><br>
                            
                         </div>
                     </div>	
@@ -199,8 +199,8 @@
                         <div class="edit__F-inp" id="editColFontFNac">
                             <input class="edit__FColor"id="editFNacColor" type="color"  value="#dddddd"><br>
                             <input class="edit__FColor2"id="editFNacColor2" type="color"  value="#17d6c3"><br>
-                            <input class="edit__FFont"id="editFNacFont" type="number" value="25.7"><br>
-                            <input class="edit__FFont2" id="editFNacFont2" type="number" value="25.7"><br>
+                            <input class="edit__FFont"id="editFNacFont" type="number" value="26"><br>
+                            <input class="edit__FFont2" id="editFNacFont2" type="number" value="26"><br>
                            
                         </div>
                         
@@ -233,8 +233,8 @@
                         <div class="edit__F-inp" id="editColFontFArP">
                             <input class="edit__FColor"id="editFArPColor" type="color"  value="#dddddd"><br>
                             <input class="edit__FColor2"id="editFArPColor2" type="color" value="#17d6c3"><br>
-                            <input class="edit__FFont"id="editFArPFont" type="number" value=" 25.7px"><br>
-                            <input class="edit__FFont2" id="editFArPFont2" type="number" value=" 25.7px"><br>
+                            <input class="edit__FFont"id="editFArPFont" type="number" value="26"><br>
+                            <input class="edit__FFont2" id="editFArPFont2" type="number" value="26"><br>
                            
                         </div>
                     </div>	
@@ -248,17 +248,17 @@
                         <div id="contEditFormHResp">
                         <p id="colorFontHResp1">Responsabilidad</p>
                         </div>
-                        <div class="edit__H">
-                            <img class="icon__edit-H" src="editar.png">
+                        <div class="edit__H"  onclick="editar2(5)" >
+                            <img class='icon__edit-H ' src="editar.png">
                         </div>
-                        <div class="edit__H-2">
-                            <img class="icon__palomita-H"  src="cheque.png">
-                            <img class="icon__X-H" src="eliminar.png">
+                        <div class="edit__H-2" id="editHResp2">
+                            <img class="icon__palomita-H"  onclick="check2(5)" src="cheque.png">
+                            <img class="icon__X-H" onclick="xEdit2(5)" src="eliminar.png">
                         </div>
                         <div class="edit__H-inp" id="editColFontHResp">
-                            <input class="edit__HColor"id="editHRespColor" type="color"  value="#dddddd"><br>
+                            <input class="edit__HColor"id="editHRespColor"  type="color"  value="#dddddd"><br>
                            
-                            <input class="edit__HFont"id="editHRespFont" type="number" value=" 25.7px"><br>
+                            <input class="edit__HFont"id="editHRespFont"  type="number" value="23"><br>
                         </div>
                     </div>
                     <div class="porc__ext">
@@ -274,19 +274,21 @@
                     </div>
 
 
-                    <div class="Resp__cont" >
-                         <p >Resolucion de problemas</p>
-                        <div class="edit__H"id="hh">
+                    <div class="Resol__cont" >
+                        <div id="contEditFormHResol">
+                         <p id="colorFontHResol1">Resolucion de problemas</p>
+                        </div>
+                        <div class="edit__H" onclick="editar2(6)">
                             <img class="icon__edit-H "  src="editar.png">
                         </div>
-                        <div class="edit__H-2">
-                            <img class="icon__palomita-H"  src="cheque.png">
-                            <img class="icon__X-H" src="eliminar.png">
+                        <div class="edit__H-2" id="editHResol2">
+                            <img class="icon__palomita-H"  onclick="check2(6)"  src="cheque.png">
+                            <img class="icon__X-H"  onclick="xEdit2(6)" src="eliminar.png">
                         </div>
-                        <div class="edit__HRES-inp" id="editColFontHRes">
-                            <input class="edit__HRESColor"id="editHresColor" type="color"  value="#dddddd"><br>
+                        <div class="edit__HRES-inp" id="editColFontHResol">
+                            <input class="edit__HRESColor"id="editHresolColor" type="color"  value="#dddddd"><br>
                            
-                            <input class="edit__HRESFont"id="editHresFont" type="number" value=" 25.7px"><br>
+                            <input class="edit__HRESFont"id="editHresolFont" type="number" value="23"><br>
                         </div>
                     </div>
                     <div class="porc__ext">
@@ -302,18 +304,20 @@
 
 
                     <div class="Proac__cont"  >
-                            <p>Proactividad</p>
-                        <div class="edit__H">
+                        <div id="contEditFormHProac">
+                            <p id="colorFontHProac1">Proactividad</p>
+                        </div>
+                        <div class="edit__H" onclick="editar2(7)">
                             <img class="icon__edit-H" src="editar.png">
                         </div>
-                        <div class="edit__H-2">
-                            <img class="icon__palomita-H"  src="cheque.png">
-                            <img class="icon__X-H" src="eliminar.png">
+                        <div class="edit__H-2" id="editHProac2">
+                            <img class="icon__palomita-H"  onclick="check2(7)" src="cheque.png">
+                            <img class="icon__X-H" onclick="xEdit2(7)" src="eliminar.png">
                         </div>
-                        <div class="edit__HProac-inp" id="editColFontHRes">
-                            <input class="edit__HProacColor"id="editHresColor" type="color"  value="#dddddd"><br>
+                        <div class="edit__HProac-inp" id="editColFontHProac">
+                            <input class="edit__HProacColor"id="editHProacColor" type="color"  value="#dddddd"><br>
                            
-                            <input class="edit__HProacFont"id="editHresFont" type="number" value=" 25.7px"><br>
+                            <input class="edit__HProacFont"id="editHProacFont" type="number" value="23"><br>
                         </div>
                     </div>
                     <div class="porc__ext">
@@ -329,15 +333,21 @@
 
 
                     <div class="Ingles__cont" >
-                            <p>Ingles</p>
-                        <div class="edit__H">
+                        <div id="contEditFormHIngles">
+                            <p id="colorFontHIngles1">Ingles</p>
+                        </div>    
+                        <div class="edit__H" onclick="editar2(8)">
                             <img class="icon__edit-H" src="editar.png">
                         </div>
-                        <div class="edit__H-2">
-                            <img class="icon__palomita-H"  src="cheque.png">
-                            <img class="icon__X-H" src="eliminar.png">
+                        <div class="edit__H-2" id="editHIngles2">
+                            <img class="icon__palomita-H" onclick="check2(8)"  src="cheque.png">
+                            <img class="icon__X-H" onclick="xEdit2(8)" src="eliminar.png">
                         </div>
-                        
+                        <div class="edit__HIngles-inp" id="editColFontHIngles">
+                            <input class="edit__HInglesColor"id="editHinglesColor" type="color"  value="#dddddd"><br>
+                           
+                            <input class="edit__HInglesFont"id="editHInglesFont" type="number" value="23"><br>
+                        </div>
                     </div>
                     <div class="porc__ext">
                         <div class="edit__FP">
@@ -364,17 +374,28 @@
                             <img class="icon__palomita-P"  src="cheque.png">
                             <img class="icon__X-P" src="eliminar.png">
                         </div>
+                        <div>
                             <div class="cont__imgProyecto1"><img sec="#"></div>
                             <div class="cont__imgProyecto2"><img sec="#"></div>
                         </div>
                     </div>
                     <div class="cont__esplProy">
-                        <div class="edit__PEspl">
+                        <div id="contEditFormProyecto">
+                            <h3 id="colorFontProyecto1" >jfhdbdhgvjhbd</h3>
+                            <p id="colorFontProyecto2" >vhbdjgvknrjkvngdv</p>
+                        </div>
+                        <div class="edit__PEspl" onclick="editar3(9,4)">
                             <img class="icon__edit-PEspl" src="editar.png">
                         </div>
-                        <div class="edit__PEspl-2">
-                            <img class="icon__palomita-PEspl"  src="cheque.png">
-                            <img class="icon__X-PEspl" src="eliminar.png">
+                        <div class="edit__PEspl-2" id="editProyecto2">
+                            <img class="icon__palomita-PEspl" onclick="check3(9,4)" src="cheque.png">
+                            <img class="icon__X-PEspl" onclick="xEdit2(9,4)" src="eliminar.png">
+                        </div>
+                        <div class="edit__Proyec-inp" id="editColFontProyecto">
+                            <input class="edit__ProyecColor"id="editProyectoColor" type="color"  value="#dddddd"><br>
+                            <input class="edit__ProyecColor2"id="editProyectoColor2" type="color"  value="#dddddd"><br>
+                            <input class="edit__ProyecFont"id="editProyectoFont" type="number" value="23"><br>
+                            <input class="edit__ProyecFont2"id="editProyectoFont2" type="number" value="23"><br>
                         </div>
                     </div>
                 </article>

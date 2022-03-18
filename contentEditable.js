@@ -14,25 +14,26 @@ let fontImp= inpFont.value;
 let fontOrg=  editBann.style.fontSize='70px';*/
 
 
-const editables=document.querySelectorAll('#contEditBann,#contEditPerfil,#contEditFormUtn,#contEditFormNac,#contEditFormArP');
-const botonesXeY=document.querySelectorAll('#editBanner2,#editPerfil2,#editFormUtn2,#editFormNac2,#editFormArP2')
-const fontYColor=document.querySelectorAll('#editColFontBanner,#editColFontPerfil,#editColFontFUtn,#editColFontFNac,#editColFontFArP')
+const editables=document.querySelectorAll('#contEditBann,#contEditPerfil,#contEditFormUtn,#contEditFormNac,#contEditFormArP,#contEditFormHResp,#contEditFormHResol,#contEditFormHProac,#contEditFormHIngles,#contEditFormProyecto');
+const botonesXeY=document.querySelectorAll('#editBanner2,#editPerfil2,#editFormUtn2,#editFormNac2,#editFormArP2,#editHResp2,#editHResol2,#editHProac2,#editHIngles2,#editProyecto2')
+const fontYColor=document.querySelectorAll('#editColFontBanner,#editColFontPerfil,#editColFontFUtn,#editColFontFNac,#editColFontFArP,#editColFontHResp,#editColFontHResol,#editColFontHProac,#editColFontHIngles,#editColFontProyecto')
 
-const contColor1=document.querySelectorAll('#banner__circulo,#colorFontPerfil1,#colorFontFUtn1,#colorFontFNac1,#colorFontFArP1')
-const contColor2=document.querySelectorAll('#colorFontPerfil2,#colorFontFUtn2,#colorFontFNac2,#colorFontFArP2')
+const contColor1=document.querySelectorAll('#banner__circulo,#colorFontPerfil1,#colorFontFUtn1,#colorFontFNac1,#colorFontFArP1,#colorFontHResp1,#colorFontHResol1,#colorFontHProac1,#colorFontHIngles1,#colorFontProyecto1')
+const contColor2=document.querySelectorAll('#colorFontPerfil2,#colorFontFUtn2,#colorFontFNac2,#colorFontFArP2,#colorFontProyecto2')
 const contColor3=document.querySelectorAll('#colorFontPerfil3')
 
-const contFont1=document.querySelectorAll('#contEditBann,#colorFontPerfil1,#colorFontFUtn1,#colorFontFNac1,#colorFontFArP1',)
-const contFont2=document.querySelectorAll('#colorFontPerfil2,#colorFontFUtn2,#colorFontFNac2,#colorFontFArP2')
+const contFont1=document.querySelectorAll('#contEditBann,#colorFontPerfil1,#colorFontFUtn1,#colorFontFNac1,#colorFontFArP1,#colorFontHResp1,#colorFontHResol1,#colorFontHProac1,#colorFontHIngles1,#colorFontProyecto1')
+const contFont2=document.querySelectorAll('#colorFontPerfil2,#colorFontFUtn2,#colorFontFNac2,#colorFontFArP2,#colorFontProyecto2')
 const contFont3=document.querySelectorAll('#colorFontPerfil3')
 
-const inpColor1=document.querySelectorAll('#editBanColor,#editPerColor,#editFUtnColor,#editFNacColor,#editFArPColor')
-const inpColor2=document.querySelectorAll('#editPerColor2,#editFUtnColor2,#editFNacColor2,#editFArPColor2')
+const inpColor1=document.querySelectorAll('#editBanColor,#editPerColor,#editFUtnColor,#editFNacColor,#editFArPColor,#editHRespColor,#editHresolColor,#editHProacColor,#editHinglesColor,#editProyectoColor')
+const inpColor2=document.querySelectorAll('#editPerColor2,#editFUtnColor2,#editFNacColor2,#editFArPColor2,#editProyectoColor2')
 const inpColor3=document.querySelectorAll('#editPerColor3')
 
-const inpFont1=document.querySelectorAll('#editBanFont,#editPerFont,#editFUtnFont,#editFNacFont,#editFArPFont')
-const inpFont2=document.querySelectorAll('#editPerFont2,#editFUtnFont2,#editFNacFont2,#editFArPFont2')
+const inpFont1=document.querySelectorAll('#editBanFont,#editPerFont,#editFUtnFont,#editFNacFont,#editFArPFont,#editHRespFont,#editHresolFont,#editHProacFont,#editHInglesFont,#editProyectoFont')
+const inpFont2=document.querySelectorAll('#editPerFont2,#editFUtnFont2,#editFNacFont2,#editFArPFont2,#editProyectoFont2')
 const inpFont3=document.querySelectorAll('#editPerFont3')
+
 
 
 let info1=null;
@@ -83,6 +84,12 @@ function check(n,l,p){
   
     contColor3[p].style.color=inpColor3[p].value;
     contFont3[p].style.fontSize=inpFont3[p].value + "px";
+    if(window.innerWidth<837){
+        contFont1[n].style.fontSize=(inpFont1[n].value /12.35 )+ "vw" ;
+        contFont2[l].style.fontSize=(inpFont2[l].value  /12.35 )+ "vw";
+        contFont3[p].style.fontSize=(inpFont3[p].value /12.35 )+ "vw";
+        
+    }
     
 
 }
@@ -134,6 +141,8 @@ function check2(n){
     colorInp1=inpColor1[n].value;
     contColor1[n].style.color=colorInp1;
     contFont1[n].style.fontSize=inpFont1[n].value + "px";
+    
+  
     
    
     
@@ -193,6 +202,7 @@ function check3(n,l){
     contColor2[l].style.color=inpColor2[l].value ;
     contFont2[l].style.fontSize=inpFont2[l].value + "px";
   
+   
     
 
 }

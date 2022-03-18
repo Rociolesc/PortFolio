@@ -1575,12 +1575,12 @@ header{
 }
 .banner__hijo h1{
 	
-	width: 495px;
+	width: 490px;
 	overflow-y: auto;
 	height: 200px;
 	position: relative;
 	margin-top:158px;
-text-align: center;
+	text-align: center;
 	font-size: 70px;
 }
 .banner__ingreso--de--dato{
@@ -1642,7 +1642,7 @@ text-align: center;
 .container-lg{
 	display: grid;
 
-	margin-top: 500px;
+	margin-top: 200px;
 
 	justify-items: center;
 	
@@ -1762,6 +1762,11 @@ text-align: center;
 	z-index: 400;
 	
 }
+#contEditFormUtn{
+	height: 170px;
+	overflow-y: auto;
+
+}
 .cont__info-utn{
 	display: inline-block;
 	position: relative;
@@ -1775,14 +1780,14 @@ text-align: center;
 }
 .cont__info-utn p{
 	color:rgb(23,214,195) ;
-	font-size: 25.7px;
+	font-size: 26px;
 	margin-top: 25px;
 	padding-left: 55px;
 }
 .cont__info-utn h4{
-	margin-top: 30px;
+	padding-top: 30px;
 	padding-left: 75px;
-	font-size: 25.7px;
+	font-size: 26px;
 	color: rgb(221,221,221);
 }
 .imgNacional__cont{
@@ -1813,15 +1818,19 @@ text-align: center;
 }
 .cont__info-nac p{
 	color:rgb(23,214,195) ;
-	font-size: 25.7px;
+	font-size: 26px;
 	margin-top: 25px;
 	padding-left: 55px;
 }
 .cont__info-nac h4{
-	margin-top: 30px;
+	padding-top: 30px;
 	padding-left: 75px;
-	font-size: 25.7px;
+	font-size: 26px;
 	color: rgb(221,221,221);
+}
+#contEditFormNac{
+	height: 170px;
+	overflow-y: auto;
 }
 .imgArP__cont{
 	position: absolute;
@@ -1852,15 +1861,19 @@ text-align: center;
 }
 .cont__info-ArP p{
 	color:rgb(23,214,195) ;
-	font-size: 25.7px;
+	font-size: 26px;
 	margin-top: 25px;
 	padding-left: 55px;
 }
 .cont__info-ArP h4{
-	margin-top: 30px;
+	padding-top: 30px;
 	padding-left: 75px;
-	font-size: 25.7px;
+	font-size: 26px;
 	color: rgb(221,221,221);
+}
+#contEditFormArP{
+	height: 170px;
+	overflow-y: auto;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------
@@ -1869,9 +1882,9 @@ text-align: center;
 (Habilidades)*/
 
 .Resp__cont {
-	padding-top: 10px;
-	font-size: 23px;
-	color: rgb(245,250,249);
+	
+	
+	
 	width: 200px;
 	height: 60px;
 	border-radius: 30px;
@@ -1881,6 +1894,15 @@ text-align: center;
 	position: relative;
 	z-index: 400;
 	margin-left: 40px;
+}
+#colorFontHResp1{
+	font-size: 23px;
+	padding-top: 10px;
+	color: rgb(245,250,249);
+}
+#contEditFormHResp{
+	height: 60px;
+	overflow-y: auto;
 }
 .porc__ext{
 	border: rgb(77, 133, 130) 2px solid;
@@ -1902,9 +1924,7 @@ text-align: center;
 
 }
 .Resol__cont{
-	padding-top: 10px;
-	font-size: 23px;
-	color: rgb(245,250,249);
+	
 	width: 300px;
 	height: 60px;
 	border-radius: 30px;
@@ -1915,7 +1935,15 @@ text-align: center;
 	z-index: 400;
 	margin-left: 40px;
 }
-
+#contEditFormHResol{
+	height: 60px;
+	overflow-y: auto;
+}
+#colorFontHResol1{
+	font-size: 23px;
+	padding-top: 10px;
+	color: rgb(245,250,249);
+}
 .aa{
 	width: 85;
 	background: #9f5c7e;
@@ -1923,9 +1951,9 @@ text-align: center;
 
 
 .Proac__cont{
-	padding-top: 10px;
-	font-size: 23px;
-	color: rgb(245,250,249);
+	
+	
+	
 	width: 200px;
 	height: 60px;
 	border-radius: 30px;
@@ -1936,11 +1964,18 @@ text-align: center;
 	z-index: 400;
 	margin-left: 40px;
 }
+#contEditFormHProac{
+	height: 60px;
+	overflow-y: auto;
+}
+#colorFontHProac1{
+	font-size: 23px;
+	padding-top: 10px;
+	color: rgb(245,250,249);
+}
 
 .Ingles__cont{
-	padding-top: 10px;
 	font-size: 23px;
-	color: rgb(245,250,249);
 	width: 200px;
 	height: 60px;
 	border-radius: 30px;
@@ -1950,6 +1985,15 @@ text-align: center;
 	position: relative;
 	z-index: 400;
 	margin-left: 40px;
+}
+#contEditFormHIngles{
+	height: 60px;
+	overflow-y: auto;
+}
+#colorFontHIngles1{
+	font-size: 23px;
+	padding-top: 10px;
+	color: rgb(245,250,249);
 }
 
 
@@ -2398,15 +2442,12 @@ margin-left: -100px;
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top:-60px;
+	top:-30px;
 	left: -30px;
 	text-align: center;
 	z-index: 350;
 }
-#hh{
-	position: absolute;
-	margin-top:-80px;
-}
+
 .icon__edit-H{
 	width: 25px;
 	position: absolute;
@@ -2414,7 +2455,7 @@ margin-left: -100px;
 	margin-left: -10px;
 }
 .edit__H-2{
-	display:inline-block;
+	display:none;
 	position: absolute;
 	width: 50px;
 	top: -50px;
@@ -2433,6 +2474,126 @@ margin-top: 50px;
 margin-left: -100px;
 }
 
+.edit__H-inp{
+	display: none;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HColor{
+	
+	position: absolute;
+	right: 80px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HFont{
+	position: absolute;
+	top: 110px;
+	right: 195px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
+.edit__HRES-inp{
+	display: none;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HRESColor{
+	
+	position: absolute;
+	right: 180px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HRESFont{
+	position: absolute;
+	top: 110px;
+	right: 295px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
+.edit__HProac-inp{
+	display: none;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HProacColor{
+	
+	position: absolute;
+	right: 80px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HProacFont{
+	position: absolute;
+	top: 110px;
+	right: 195px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
+.edit__HIngles-inp{
+	display: none;
+	position: absolute;
+	
+	top: -55px;
+	right: 16px;
+	
+}
+.edit__HInglesColor{
+	
+	position: absolute;
+	right: 80px;
+	height: 55px;
+	width: 55px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	background: rgba(28, 26, 26);
+	border: rgb(34, 243, 243)3px solid;
+    border-radius: 90%;
+}
+
+.edit__HInglesFont{
+	position: absolute;
+	top: 110px;
+	right: 195px;
+	border:rgb(34, 243, 243)3px solid;
+	margin-left: 10px;
+	width: 40px;
+	height: 30px;
+}
 .edit__FP{
 	display: none;
 	position: absolute;
@@ -2477,7 +2638,7 @@ margin-top: 0px;
 margin-left: 10px;
 }
 .edit__P{
-	display:none;
+	display:inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
@@ -2488,7 +2649,7 @@ margin-left: 10px;
 	left: 280px;
 	text-align: center;
 	z-index: 350;
-	float: right;
+	
 	
 }
 .icon__edit-P{
@@ -2500,7 +2661,7 @@ margin-left: 10px;
 	
 }
 .edit__P-2{
-	display:none;
+	display:inline-block;
 	position: absolute;
 	width: 50px;
 	top: -75px;
@@ -2521,18 +2682,18 @@ margin-top: 50px;
 margin-left: 0px;
 }
 .edit__PEspl{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top: -40px;
+	top: -20px;
 	right: -20px;
 	text-align: center;
 	z-index: 350;
-	float: right;
+	
 	
 }
 .icon__edit-PEspl{
@@ -2541,6 +2702,15 @@ margin-left: 0px;
 	margin-top: 10px;
 	margin-left: -10px;
 	
+}
+#colorFontProyecto1{
+	width:33vw ;
+	margin-left: 55px;
+	height: 130px;
+	padding-top: 50px;
+}
+#colorFontProyecto2{
+	padding-top: 20px;
 }
 .edit__PEspl-2{
 	display: none;
@@ -2564,16 +2734,13 @@ margin-top: 60px;
 margin-left: -50px;
 
 }
-
-.edit__H-inp{
-	display: inline-block;
+.edit__Proyec-inp{
+	display: none;
 	position: absolute;
-	
-	top: -55px;
-	right: 16px;
-	
+	top: 75px;
+	right: -105px;
 }
-.edit__HColor{
+.edit__ProyecColor{
 	
 	position: absolute;
 	right: 80px;
@@ -2586,27 +2753,20 @@ margin-left: -50px;
     border-radius: 90%;
 }
 
-.edit__HFont{
+.edit__ProyecFont{
 	position: absolute;
-	top: 110px;
-	right: 195px;
+	top: 58px;
+	right: 88px;
 	border:rgb(34, 243, 243)3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
 }
-.edit__HRES-inp{
-	display: inline-block;
-	position: absolute;
-	
-	top: -55px;
-	right: 16px;
-	
-}
-.edit__HRESColor{
+.edit__ProyecColor2{
 	
 	position: absolute;
 	right: 80px;
+	top: 90px;
 	height: 55px;
 	width: 55px;
 	padding: 5px 5px 5px 5px;
@@ -2616,47 +2776,67 @@ margin-left: -50px;
     border-radius: 90%;
 }
 
-.edit__HRESFont{
+.edit__ProyecFont2{
 	position: absolute;
-	top: 110px;
-	right: 195px;
+	top: 148px;
+	right: 88px;
 	border:rgb(34, 243, 243)3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
 }
 
-
-
+@media only screen and (max-width:508px){
+	#contEditBann{
+		margin-left: 20px;
+		width: 450px;
+	}
+}
 @media only screen and (max-width:837px){
  
 .banner__conten{
-	top: 30px;
+	top: 15px;
 }
+
 .banner__hijo{
 	margin-top: 100px;
-	width: 75vw;
-	height: 75vw;	
+	/*width: 75vw;
+	height: 75vw;*/	
 	padding-top:-20px;
+	text-align: center;
 }
 .banner__hijo h1{
-	padding-top: 25%;
-	font-size: 14vw;
+	
+	font-size: 70px;
+
 }
 .edit__banner{
-	margin-top: 50px;
+	margin-top: -270px;
 	margin-left: -170px;
 }
 .edit__banner-2{
-	margin-top: 50px;
+	margin-top: -270px;
 	margin-left: -170px;
 }
 .edit__banner-2 img{
 	margin-left: 0;
 }
 .icon__X{
-	margin-top: 60px;
-	left: 0px;
+	margin-top: 45px;
+	left:-40px;
+}
+.edit__banner-inp{
+	margin-top: -300px;
+	margin-left: -120px;
+}
+#editBanFont{
+	position: absolute;
+	margin-top: -52.5px;
+	margin-left: 35px;
+}
+#contEditPerfil{
+	margin-top: 100px;
+	height: 400px;
 }
 .row{
 	width: 100%;
@@ -2719,14 +2899,16 @@ margin-left: -50px;
 	margin-left: 0;
 	left: 4.3vw;
 	width:70vw ;
+	margin-top: -40px;
+	padding: 40px 10px 0px 10px;
 }
 .cont__imgProyecto1{
 	margin-top: 20px;
 	margin-left: 0;
 }
 .cont__imgProyecto2{
-	margin-left: 0;
-	margin-top: 0px;
+	margin-left: -20px;
+	margin-top: -270px;
 }
 .edit__P{
 	margin-top: -30px;
@@ -2750,11 +2932,63 @@ margin-left: -50px;
 	display: none;
 }
 .edit__F{
-	right: 0px;
+	right: 330px;
 }
 .edit__F-2{
-	right: 0px;
-	margin-top: 30px;
+	right: 330px;
+	margin-top: 0px;
+}
+.edit__F-inp {
+	right: 287px;
+    top: 105px;
+}
+#editFUtnColor{
+	right: 40px;
+	margin-top: -38px;
+}
+#editFUtnFont{
+	right: 50px;
+    margin-top: 10px;
+}
+#editFUtnColor2{
+	right: 40px;
+    margin-top: -55px;
+}
+#editFUtnFont2{
+	right: 50px;
+    margin-top: -55px;
+}
+#editFNacColor{
+	right: 40px;
+	margin-top: -37px;
+}
+#editFNacColor2{
+	right: 40px;
+    margin-top: -55px;
+}
+#editFNacFont{
+	right: 50px;
+    margin-top: 10px;
+}
+#editFNacFont2{
+	right: 50px;
+    margin-top: -55px;
+}
+#editFArPColor{
+	right: 40px;
+	margin-top: -37px;
+}
+#editFArPColor2{
+	right: 40px;
+    margin-top: -55px;
+}
+#editFArPFont{
+	right: 50px;
+    margin-top: 10px;
+}
+#editFArPFont2{
+	right: 50px;
+    margin-top: -55px;
 }
 .icon__X-F{
 	margin-top: 60px;
@@ -2863,5 +3097,32 @@ margin-left: -50px;
 }
 .porc__int{
 	width: 48.5vw;
+}
+#contEditFormProyecto{
+	height: 360px;
+	text-align: center;
+}
+#edit__Proyec-inp{
+	position: absolute;
+    top: 22px;
+    right: -240px;
+}
+#editProyecto2{
+	right: 322px;
+}
+.edit__PEspl{
+	right: 322px;
+}
+.edit__Proyec-inp {
+	right: 240px;
+}
+#contEditFormUtn{
+	height: 278px;
+}
+#contEditFormNac{
+	height: 278px;
+}
+#contEditFormArP{
+	height: 278px;
 }
 }
