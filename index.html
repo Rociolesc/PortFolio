@@ -97,13 +97,16 @@
                 <article class="col  col__perfil" >
                     
                    <div class="linea__inicio" id="linea"></div>
-                    <div class="foto__cont" ><img style="outline: #48a 4px solid;" class="foto__perfil" src="foto.png">
-                        <div class="edit__FotoPer">
+                    <div class="foto__cont" ><img class="foto__perfil" src="foto.png">
+                        <div class="edit__FotoPer" id="editFotoPerf" onclick="editFoto(0)">
                             <img class="icon__edit-foto" src="editar.png">
                         </div>
-                        <div class="edit__FotoPer-2">
-                            <img class="icon__palomita-foto"  src="cheque.png">
-                            <img class="icon__X-foto" src="eliminar.png">
+                        <div class="edit__FotoPer-2" id="editFotoPerf2" >
+                            <img class="icon__palomita-foto"  onclick="checkFoto(0)" src="cheque.png">
+                            <img class="icon__X-foto" onclick="xEditFoto(0)" src="eliminar.png">
+                        </div>
+                        <div class="editFotoPerfil" id="contFile">
+                            <input type="file" id="inpFile" >
                         </div>
                     </div>
                         
@@ -138,18 +141,21 @@
             <div class="row" id="Formacion">
                 <article class="col" class="formacion">
                    <div class="linea" id="linea"></div>
-                <div class="cont__img">  
+               <div class="cont__img" >
                     <div class="imgUtn__cont" id ="img__formacion" >
-                        <div class="edit__FImg">
+                         <img src="UTN_logo.jpg" class="utn__logo">
+                        <div class="edit__FImg" id="editFotoFUtn" onclick="editFoto(1)">
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
-                        <div class="edit__FImg-2">
-                            <img class="icon__palomita-FImg"  src="cheque.png">
-                            <img class="icon__X-FImg" src="eliminar.png">
+                        <div class="edit__FImg-2" id="editFotoFUtn2">
+                            <img class="icon__palomita-FImg" onclick="checkFoto(1)" src="cheque.png">
+                            <img class="icon__X-FImg" onclick="xEditFoto(1)" src="eliminar.png">
                         </div>
                         
-                        <img src="UTN_logo.jpg" class="utn__logo">
-                    
+                    </div>
+                
+                    <div class="editFotoFUtn   editFotoF" id="contFileFUtn">
+                            <input type="file" id="inpFileFUtn" class="inpFile">
                     </div>
                 </div>
                     <div class="cont__info-utn"> 
@@ -172,16 +178,21 @@
                            
                         </div>
                     </div>	
-                <div class="cont__img">        
+                <div class="cont__img" >
                     <div class="imgNacional__cont" id ="img__formacion">
-                        <div class="edit__FImg">
+                        <img class="imgNac" src="logoNacional.png">
+                        <div class="edit__FImg" id="editFotoFNac" onclick="editFoto(2)">
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
-                        <div class="edit__FImg-2">
-                            <img class="icon__palomita-FImg"  src="cheque.png">
-                            <img class="icon__X-FImg" src="eliminar.png">
+                        <div class="edit__FImg-2" id="editFotoFNac2">
+                            <img class="icon__palomita-FImg"  onclick="checkFoto(2)"  src="cheque.png">
+                            <img class="icon__X-FImg" onclick="xEditFoto(2)" src="eliminar.png">
                         </div>
-                        <img class="imgNac" src="logoNacional.png">
+                    </div>        
+                
+
+                    <div class="editFotoFNac   editFotoF" id="contFileFNac">
+                            <input type="file" id="inpFileFNac" class="inpFile" >
                     </div>
                 </div>
                     <div class="cont__info-nac">
@@ -205,17 +216,20 @@
                         </div>
                         
                     </div>
-                <div class="cont__img">
+                <div class="cont__img" >
                     <div class="imgArP__cont" id ="img__formacion">
-                        <div class="edit__FImg">
+                        <img class="imgArP" src="APLogo-20-20.png">
+                        <div class="edit__FImg" id="editFotoFArP" onclick="editFoto(3)">
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
-                        <div class="edit__FImg-2">
-                            <img class="icon__palomita-FImg"  src="cheque.png">
-                            <img class="icon__X-FImg" src="eliminar.png">
-                        </div>
-                        
-                        <img class="imgArP" src="APLogo-20-20.png">
+                        <div class="edit__FImg-2" id="editFotoFArP2">
+                            <img class="icon__palomita-FImg"  onclick="checkFoto(3)" src="cheque.png">
+                            <img class="icon__X-FImg" onclick="xEditFoto(3)" src="eliminar.png">
+                        </div> 
+                    </div>
+                
+                    <div class="editFotoFArP   editFotoF" id="contFileFArP">
+                            <input type="file" id="inpFileFArP" class="inpFile">
                     </div>
                 </div>
                     <div class="cont__info-ArP">
@@ -425,5 +439,6 @@
 
         <script src="codigo.js"></script>
         <script src="contentEditable.js"></script>
+        <script src="editDeImagentes.js"></script>
     </body>
 </html>

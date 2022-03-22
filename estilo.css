@@ -1649,7 +1649,7 @@ header{
 }
 .row{
 	width:70vw ;
-	height:120vh ;
+	height:776px ;
 	background:rgba(28, 26, 26, 0.46);
 	position: relative;
 	z-index:301;
@@ -1667,23 +1667,25 @@ header{
 	width: 2px;
 	margin-top: 70px;
 	height: 110vh;
-	left:90px;
+	left:81px;
 }
 .linea{
 	z-index: 399;
-	position: absolute;
-	background:rgb(22,117,104) ;
-	width: 2px;
-	height: 160vh;
-	left:90px;
+    position: absolute;
+    background: rgb(22,117,104);
+    width: 2px;
+    height: 138vh;
+    left: 81px;
+    top: -5vh;
 }
 .linea__fin{
 	z-index: 399;
-	position: absolute;
-	background:rgb(22,117,104) ;
-	width: 2px;
-	height: 10vh;
-	left:90px;
+    position: absolute;
+    background: rgb(22,117,104);
+    width: 2px;
+    height: 30vh;
+    left: 81px;
+    top: -82px;
 }
 /*------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
@@ -1709,6 +1711,20 @@ header{
 	position: relative;
 	z-index: 400;
 }
+.editFotoPerfil{
+	background: rgb(66 62 61);
+    width: 0vw;
+    height: 198px;
+    padding-top: 173px;
+    padding-left: 0px;
+    position: absolute;
+    margin-top: -203px;
+    margin-left: 114px;
+    z-index: 339;
+    border: rgb(89 156 152) 2px solid;
+	transition: all 1s;
+}
+
 .cont__info-perfil{
 	position: absolute;
 	width: 45vw;
@@ -1752,7 +1768,7 @@ header{
 	
 }
 .imgUtn__cont {
-	position: absolute;
+	position:absolute;
 	background: rgb(90,160,156);
 	border-radius: 90%;
 	width: 160px;
@@ -1762,6 +1778,26 @@ header{
 	z-index: 400;
 	
 }
+.editFotoF{
+	background: rgb(66 62 61);
+    width: 0vw;
+    height: 160px;
+    padding-top: 134px;
+    padding-left: 0vw;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 80px;
+    z-index: 339;
+    border: rgb(89 156 152) 2px solid;
+    transition: all 1s;
+}
+
+.inpFile{
+	z-index: 339;
+	width: 0px;
+	transition: all 1s;
+}
+
 #contEditFormUtn{
 	height: 170px;
 	overflow-y: auto;
@@ -1848,6 +1884,12 @@ header{
 	height: 90px;
 	background: rgb(0,0,0);
 }
+
+
+#contFileFArP{
+	margin-top: 20px;
+}
+
 .cont__info-ArP{
 	display: inline-block;
 	position: relative;
@@ -1889,7 +1931,7 @@ header{
 	height: 60px;
 	border-radius: 30px;
 	text-align: center;
-	background: rgb(90,160,156);
+	background: rgb(88,83,83);
 	margin-top: 20px;
 	position: relative;
 	z-index: 400;
@@ -1897,8 +1939,8 @@ header{
 }
 #colorFontHResp1{
 	font-size: 23px;
-	padding-top: 10px;
-	color: rgb(245,250,249);
+	padding-top: 16px;
+	color: rgb(23,214,195);
 }
 #contEditFormHResp{
 	height: 60px;
@@ -1929,7 +1971,7 @@ header{
 	height: 60px;
 	border-radius: 30px;
 	text-align: center;
-	background: rgb(90,160,156);
+	background: rgb(88,83,83) ;
 	margin-top: 30px;
 	position: relative;
 	z-index: 400;
@@ -1941,8 +1983,8 @@ header{
 }
 #colorFontHResol1{
 	font-size: 23px;
-	padding-top: 10px;
-	color: rgb(245,250,249);
+	padding-top: 16px;
+	color:rgb(23,214,195);
 }
 .aa{
 	width: 85;
@@ -1958,7 +2000,7 @@ header{
 	height: 60px;
 	border-radius: 30px;
 	text-align: center;
-	background: rgb(90,160,156);
+	background: rgb(88,83,83);
 	margin-top: 30px;
 	position: relative;
 	z-index: 400;
@@ -1970,8 +2012,8 @@ header{
 }
 #colorFontHProac1{
 	font-size: 23px;
-	padding-top: 10px;
-	color: rgb(245,250,249);
+	padding-top: 16px;
+	color: rgb(23,214,195);
 }
 
 .Ingles__cont{
@@ -2258,15 +2300,15 @@ margin-left: -50px;
 }
 
 .edit__FotoPer{
-	display :none;
+	display :inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top: -220px;
-	margin-left: -18px;
+	margin-top: -21px;
+	margin-left: -223px;
 	text-align: center;
 	z-index: 350;
 	
@@ -2282,9 +2324,13 @@ margin-left: -50px;
 	display: none;
 	position: absolute;
 	width: 50px;
-	margin-top: -35px;
-	margin-left: -190px;
+	margin-top: -39px;
+	margin-left: -202px;
 	z-index: 350;
+}
+#inpFile{
+	width: 0px;
+	transition: all 1s;
 }
 .edit__FotoPer-2 img{
 	display: inline-block;
@@ -2393,7 +2439,7 @@ margin-top: 50px;
 	height: 30px;
 }
 .edit__FImg{
-	display:none;
+	display:inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
@@ -2404,7 +2450,7 @@ margin-top: 50px;
 	left: -20px;
 	text-align: center;
 	z-index: 350;
-	float: right;
+	
 	
 }
 .icon__edit-FImg{
@@ -2788,10 +2834,34 @@ margin-left: -50px;
 
 @media only screen and (max-width:508px){
 	#contEditBann{
-		margin-left: 20px;
-		width: 450px;
+		margin-left: 0px;
+		width: 92vw;
+		height: 92vw;
+		margin-top: 0px;
+		border-radius: 90%;
+		padding-top: 32%;
+	}
+	#banner__circulo{
+		margin-top: 62px;
+		width: 92vw;
+		height: 92vw;
+		padding-top:-20px;
+		text-align: center;
+	}
+	#LogoEdit {
+		margin-top: -375px;
+		margin-left: -166px;
+	}
+	#editBanner2 {
+		margin-top: -375px;
+		margin-left: -166px;
+	}
+	#editColFontBanner {
+		margin-top: -414px;
+		margin-left: -120px;
 	}
 }
+
 @media only screen and (max-width:837px){
  
 .banner__conten{
@@ -2799,10 +2869,7 @@ margin-left: -50px;
 }
 
 .banner__hijo{
-	margin-top: 100px;
-	/*width: 75vw;
-	height: 75vw;*/	
-	padding-top:-20px;
+	margin-top: 60px;
 	text-align: center;
 }
 .banner__hijo h1{
@@ -2831,7 +2898,7 @@ margin-left: -50px;
 }
 #editBanFont{
 	position: absolute;
-	margin-top: -52.5px;
+	margin-top: -76.5px;
 	margin-left: 35px;
 }
 #contEditPerfil{
@@ -2932,14 +2999,14 @@ margin-left: -50px;
 	display: none;
 }
 .edit__F{
-	right: 330px;
+	right: 64vw;
 }
 .edit__F-2{
-	right: 330px;
+	right: 64vw;
 	margin-top: 0px;
 }
 .edit__F-inp {
-	right: 287px;
+	right: 58.5vw;
     top: 105px;
 }
 #editFUtnColor{
@@ -2998,10 +3065,7 @@ margin-left: -50px;
 	text-align: center;
 	display: inline-block;
 }
-.imgUtn__cont{
-	position: relative;
 
-}
 .cont__img{
 	display:grid;
 	position: absolute;
@@ -3125,4 +3189,27 @@ margin-left: -50px;
 #contEditFormArP{
 	height: 278px;
 }
+#img__formacion{
+	left: 2px;
+}
+#img__formacion {
+	position: relative;
+}
+.editFotoF{
+	
+    width: 0vw;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 93px;
+    padding-top: 0px;
+    padding-left: 0vw;
+	transition: all 1s
+}
+.inpFile{
+	height: 0px;
+	width: 0px;
+	transition: all 1.5s;
+	
+}
+
 }
