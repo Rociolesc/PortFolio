@@ -28,9 +28,9 @@
         <div class="firefly"></div>
 
         <header class="head" id="head">
-            <nav class="nav">
-                <ol class="nav__ol">
-                    <li class="nav__li--redes">
+            <nav class="nav"  >
+                <ol class="nav__ol" >
+                    <li class="nav__li--redes" >
                         <a href="#" class="linkedin" ><img href="#" src="logoLinkedin.png"></a>
                         <div class="sub__redes">
                             <a href="#" class="logGem"><img src="logoGmail.png"></a>
@@ -82,6 +82,7 @@
 					<input id="idE" class="inp name" type="text" required=""><br>
                     </div>
                     <div class="pass">
+                        <label for="idE" class="form__label">Correo</label>
 					<input  id="password__1" class="inp password" type="password"  required=""> <br>
                     </div>
 					<input  class="botones__datos	submit" type="submit">
@@ -98,12 +99,12 @@
                     
                    <div class="linea__inicio" id="linea"></div>
                     <div class="foto__cont" ><img class="foto__perfil" src="foto.png">
-                        <div class="edit__FotoPer" id="editFotoPerf" onclick="editFoto(0)">
+                        <div class="edit__FotoPer" id="editFotoPerf" onclick="editFoto1(0)">
                             <img class="icon__edit-foto" src="editar.png">
                         </div>
                         <div class="edit__FotoPer-2" id="editFotoPerf2" >
-                            <img class="icon__palomita-foto"  onclick="checkFoto(0)" src="cheque.png">
-                            <img class="icon__X-foto" onclick="xEditFoto(0)" src="eliminar.png">
+                            <img class="icon__palomita-foto"  onclick="checkFoto1(0)" src="cheque.png">
+                            <img class="icon__X-foto" onclick="xEditFoto1(0)" src="eliminar.png">
                         </div>
                         <div class="editFotoPerfil" id="contFile">
                             <input type="file" id="inpFile" >
@@ -380,31 +381,35 @@
                     <div class="linea__fin" id="linea"></div>
                     <div>
                         
-                        <div class="cont__ProGen">
+                    <div class="cont__ProGen">
+                        
+                        <div class="cont__imgProyectos">
                             <div class="edit__P">
-                            <img class="icon__edit-P" src="editar.png">
-                        </div>
-                        <div class="edit__P-2">
-                            <img class="icon__palomita-P"  src="cheque.png">
-                            <img class="icon__X-P" src="eliminar.png">
-                        </div>
-                        <div>
-                            <div class="cont__imgProyecto1"><img sec="#"></div>
-                            <div class="cont__imgProyecto2"><img sec="#"></div>
+                                <img class="icon__edit-P" src="editar.png">
+                            </div>
+                            <div class="edit__P-2">
+                                <img class="icon__palomita-P"  src="cheque.png">
+                                <img class="icon__X-P" src="eliminar.png">
+                            </div>
+                                <div class="cont__imgProyecto1"><img sec="#"></div>
+                                <div class="cont__imgProyecto2"><img sec="#"></div>
                         </div>
                     </div>
                     <div class="cont__esplProy">
                         <div id="contEditFormProyecto">
                             <h3 id="colorFontProyecto1" >jfhdbdhgvjhbd</h3>
                             <p id="colorFontProyecto2" >vhbdjgvknrjkvngdv</p>
-                        </div>
+                        </div> 
+                    <div class="contnn">
                         <div class="edit__PEspl" onclick="editar3(9,4)">
                             <img class="icon__edit-PEspl" src="editar.png">
                         </div>
+                       
                         <div class="edit__PEspl-2" id="editProyecto2">
                             <img class="icon__palomita-PEspl" onclick="check3(9,4)" src="cheque.png">
                             <img class="icon__X-PEspl" onclick="xEdit2(9,4)" src="eliminar.png">
                         </div>
+</div>
                         <div class="edit__Proyec-inp" id="editColFontProyecto">
                             <input class="edit__ProyecColor"id="editProyectoColor" type="color"  value="#dddddd"><br>
                             <input class="edit__ProyecColor2"id="editProyectoColor2" type="color"  value="#dddddd"><br>

@@ -1383,16 +1383,31 @@ html, body {
 --------------------------------------------------------------------------------------------------
 --------(MENU Y NAV)----------------------------------------------------------------------*/
 .nav{
-	width: 100%;
+	width: 353px;
 	z-index: 800;
 	position: fixed;
+	height: 90px;
+	right: 0px;
+
 }
+.nav__ol{
+	height: 90px;
+	/*margin-top: -100px;*/
+	transition: all 0.5s;
+}
+/*
+.nav:hover > .nav__ol{
+	margin-top: 0px;
+	transition: all 0.5s;
+}*/
 .nav__ol li{
 	display: inline-block;
 }
 
 .nav__li--redes{
     float: right;
+	position: absolute;
+	right:280px;
 }
 .nav__li--redes a img{
     position: relative;
@@ -1419,7 +1434,7 @@ html, body {
 }
 .linkedin {
 	position: relative;
-	right:280px;
+	
 	top: 14px;
 	width: 60px;
     height: 60px;
@@ -1428,7 +1443,6 @@ html, body {
 }
 .logInsta{
 	position:absolute;
-    right:280px;
 	top: 14px;
 	width: 60px;
 	height: 60px;
@@ -1438,7 +1452,6 @@ html, body {
 }
 .logGem{
 	position: absolute;
-	right:280px;
 	top: 14px;
 	width: 60px;
 	height: 60px;
@@ -1449,7 +1462,6 @@ html, body {
 
 .logGit{
 	position: absolute;
-	right:280px;
 	top: 14px;
 	width: 60px;
 	height: 60px;
@@ -1461,7 +1473,7 @@ html, body {
 
 .nav__li--inisioSesion{
 	color: #fff;
-	position: absolute;
+	position: relative;
 	background: #5C9F9E;
 	right:100px ;
 	top: 14px;
@@ -1469,7 +1481,7 @@ html, body {
 	height: 60px;
 	width: 150px;
 	float: right;
-
+	
 	
 }
 header{
@@ -1556,7 +1568,7 @@ header{
 	display: flex;
 	position: relative;
 	justify-content: center;
-	top: 5em;
+	top: 6em;
 	
 	
 	
@@ -1641,9 +1653,7 @@ header{
 
 .container-lg{
 	display: grid;
-
-	margin-top: 200px;
-
+	margin-top: 42vh;
 	justify-items: center;
 	
 }
@@ -1666,7 +1676,7 @@ header{
 	background:rgb(22,117,104) ;
 	width: 2px;
 	margin-top: 70px;
-	height: 110vh;
+	height: 178vh;
 	left:81px;
 }
 .linea{
@@ -1674,7 +1684,7 @@ header{
     position: absolute;
     background: rgb(22,117,104);
     width: 2px;
-    height: 138vh;
+    height: 145%;
     left: 81px;
     top: -5vh;
 }
@@ -1719,7 +1729,7 @@ header{
     padding-left: 0px;
     position: absolute;
     margin-top: -203px;
-    margin-left: 114px;
+    margin-left: 108px;
     z-index: 339;
     border: rgb(89 156 152) 2px solid;
 	transition: all 1s;
@@ -1886,9 +1896,7 @@ header{
 }
 
 
-#contFileFArP{
-	margin-top: 20px;
-}
+
 
 .cont__info-ArP{
 	display: inline-block;
@@ -2022,7 +2030,7 @@ header{
 	height: 60px;
 	border-radius: 30px;
 	text-align: center;
-	background: rgb(90,160,156);
+	background: rgb(88,83,83);
 	margin-top: 30px;
 	position: relative;
 	z-index: 400;
@@ -2034,8 +2042,8 @@ header{
 }
 #colorFontHIngles1{
 	font-size: 23px;
-	padding-top: 10px;
-	color: rgb(245,250,249);
+	padding-top: 16px;
+	color: rgb(23,214,195);
 }
 
 
@@ -2044,7 +2052,7 @@ header{
 ----------------------------------------------------------------------------------------------------------------------------------------------
 (Proyectos)*/
 .cont__imgProyecto1{
-	position: relative;
+	position: absolute;
 	z-index: 400;
 	width: 180px;
 	height: 250px;
@@ -2058,16 +2066,16 @@ header{
 	width: 180px;
 	height: 250px;
 	background: rgb(11,125,119);
-	margin-top: -270px;
+	margin-top: 70px;
 	margin-left : 70px;
 }
 .cont__esplProy{
-	position: relative;
+	position: absolute;
 	width: 40vw;
 	height: 400px;
 	background: rgb(88,83,83);
 	margin-left: 230px;
-	margin-top: -130px;
+	margin-top: 207px;
 	z-index: 350;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------
@@ -2691,7 +2699,7 @@ margin-left: 10px;
 	outline: rgb(34, 243, 243)3px solid;
 	width: 50px;
 	height: 50px;
-	margin-top: -60px;
+	margin-top: 31px;
 	left: 280px;
 	text-align: center;
 	z-index: 350;
@@ -2710,7 +2718,7 @@ margin-left: 10px;
 	display:inline-block;
 	position: absolute;
 	width: 50px;
-	top: -75px;
+	top: 12px;
 	left: 240px;
 	z-index: 350;
 	margin-right: 10px;
@@ -2833,6 +2841,18 @@ margin-left: -50px;
 }
 
 @media only screen and (max-width:508px){
+	.nav{
+		width: 353px;
+		
+	
+	}
+	.nav__li--inisioSesion{
+		right: 9vw;
+	}
+	.nav__li--redes{
+		right: 0;
+		margin-right: 206px;
+	}
 	#contEditBann{
 		margin-left: 0px;
 		width: 92vw;
@@ -2849,8 +2869,8 @@ margin-left: -50px;
 		text-align: center;
 	}
 	#LogoEdit {
-		margin-top: -375px;
-		margin-left: -166px;
+		margin-top: -70vw;
+		margin-left: -37vw;
 	}
 	#editBanner2 {
 		margin-top: -375px;
@@ -2860,12 +2880,24 @@ margin-left: -50px;
 		margin-top: -414px;
 		margin-left: -120px;
 	}
+	.banner__ingreso--de--dato{
+		width: 80vw;
+	}
+	.inp{
+		width: 66vw;
+	}
+	#cancelar__datos{
+		margin-left: 40vw;
+	}
+	#editColFontProyecto{
+		right: 44.6vw;
+	}
 }
 
 @media only screen and (max-width:837px){
  
 .banner__conten{
-	top: 15px;
+	top: 36px;
 }
 
 .banner__hijo{
@@ -2957,33 +2989,40 @@ margin-left: -50px;
 	z-index: 350;
 }
 .cont__ProGen{
-	margin-left: 4.3vw;
-	width: 70vw;
-	display: grid;
-	justify-items: center;
+	margin-left: 0;
+    width: 70vw;
+    display: grid;
+    
+    left: 4.3vw;
+    height: 289px;
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
 }
 .cont__esplProy{
 	margin-left: 0;
 	left: 4.3vw;
 	width:70vw ;
-	margin-top: -40px;
+	margin-top: 266px;
 	padding: 40px 10px 0px 10px;
 }
 .cont__imgProyecto1{
-	margin-top: 20px;
-	margin-left: 0;
+	margin-top: 90px;
+    margin-left: 0;
 }
 .cont__imgProyecto2{
-	margin-left: -20px;
-	margin-top: -270px;
+	margin-left: 0;
+    margin-top: 72px;
 }
 .edit__P{
-	margin-top: -30px;
-	left: 50px;
+	margin-top: 17px;
+    left: 0;
+    margin-left: 2px;
 }
 .edit__P-2{
-	left: 70px;
-	margin-top:90px;
+	left: 0;
+    margin-left: 22px;
+    margin-top: -22px;
 }
 
 .Proyecto{
@@ -2992,9 +3031,8 @@ margin-left: -50px;
 .icon__X-P{
 	margin-left: -90px;
 }
-.banner__ingreso--de--dato{
-	width: 400px;
-}
+
+
 #linea{
 	display: none;
 }
@@ -3006,7 +3044,7 @@ margin-left: -50px;
 	margin-top: 0px;
 }
 .edit__F-inp {
-	right: 58.5vw;
+	right: 55.5vw;
     top: 105px;
 }
 #editFUtnColor{
@@ -3172,13 +3210,23 @@ margin-left: -50px;
     right: -240px;
 }
 #editProyecto2{
-	right: 322px;
+	right: 0px;
+	margin-left: 0px;
+    top: 0px;
+	left: -25px;
 }
 .edit__PEspl{
-	right: 322px;
+	right: 0px;
+	margin-left: 0px;
+    top: 0px;
+	left: -25px;
 }
 .edit__Proyec-inp {
-	right: 240px;
+	right: 0vw;
+	top: 119px;
+    width: 70vw;
+    left: 0vw;
+    
 }
 #contEditFormUtn{
 	height: 278px;
@@ -3211,5 +3259,36 @@ margin-left: -50px;
 	transition: all 1.5s;
 	
 }
-
+.editFotoPerfil{
+	
+    width: 0vw;
+    height: 0px;
+    margin-left: 35vw;
+    margin-top: -104px;
+    padding-top: 0px;
+    padding-left: 0vw;
+	transition: all 1s
+}
+.cont__imgProyectos{
+	
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    display: grid;
+    margin-left: 0;
+    width: 288px;
+    justify-items: center;
+}
+.contnn{
+	
+	width: 70vw;
+    height: 100px;
+    right: 0vw;
+    position: absolute;
+    top: 0px;
+}
+.edit__Proyec-inp input{
+	right: 0;
+	left: -25px;
+}
 }

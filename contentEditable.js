@@ -15,6 +15,7 @@ let fontOrg=  editBann.style.fontSize='70px';*/
 
 
 const editables=document.querySelectorAll('#contEditBann,#contEditPerfil,#contEditFormUtn,#contEditFormNac,#contEditFormArP,#contEditFormHResp,#contEditFormHResol,#contEditFormHProac,#contEditFormHIngles,#contEditFormProyecto');
+const botonEdit=document.querySelectorAll('#LogoEdit,.edit__perfil,.edit__F,.edit__F,.edit__F,.edit__H,.edit__H,.edit__H,.edit__H,.edit__PEspl');
 const botonesXeY=document.querySelectorAll('#editBanner2,#editPerfil2,#editFormUtn2,#editFormNac2,#editFormArP2,#editHResp2,#editHResol2,#editHProac2,#editHIngles2,#editProyecto2')
 const fontYColor=document.querySelectorAll('#editColFontBanner,#editColFontPerfil,#editColFontFUtn,#editColFontFNac,#editColFontFArP,#editColFontHResp,#editColFontHResol,#editColFontHProac,#editColFontHIngles,#editColFontProyecto')
 
@@ -57,6 +58,7 @@ const inpColor=document.getElementById('editBanColor');*/
 function editar(n,l,p){
     editables[n].contentEditable="true";
     editables[n].disignMode='on';
+    botonEdit[n].style.display="none";
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
@@ -68,6 +70,7 @@ function editar(n,l,p){
 function check(n,l,p){
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
@@ -100,7 +103,7 @@ function xEdit(n,l,p){
    
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
-   
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
@@ -121,6 +124,7 @@ function xEdit(n,l,p){
 function editar2(n){
     editables[n].contentEditable="true";
     editables[n].disignMode='on';
+    botonEdit[n].style.display="none";
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
@@ -131,6 +135,7 @@ function editar2(n){
 function check2(n){
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
@@ -155,7 +160,7 @@ function xEdit2(n){
    
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
-   
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
@@ -177,6 +182,7 @@ function xEdit2(n){
 function editar3(n,l){
     editables[n].contentEditable="true";
     editables[n].disignMode='on';
+    botonEdit[n].style.display="none";
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
@@ -188,6 +194,7 @@ function editar3(n,l){
 function check3(n,l){
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
@@ -213,7 +220,7 @@ function xEdit3(n,l){
    
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
-   
+    botonEdit[n].style.display="inline-block";
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
