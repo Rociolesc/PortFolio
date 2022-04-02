@@ -37,9 +37,9 @@ const inpFont3=document.querySelectorAll('#editPerFont3')
 
 
 
-let info1=null;
-let info2=null;
-let info3=null;
+let info1=[];
+let info2=[];
+let info3=[];
 let colorInp1=null;
 let colorInp2=null;
 let colorInp3=null;
@@ -62,9 +62,9 @@ function editar(n,l,p){
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
-    info1=contFont1[n].innerHTML;
-    info2=contFont2[l].innerHTML;
-    info3=contFont3[p].innerHTML;
+    info1[n]=contFont1[n].innerHTML;
+    info2[l]=contFont2[l].innerHTML;
+    info3[p]=contFont3[p].innerHTML;
     
 }
 function check(n,l,p){
@@ -87,12 +87,7 @@ function check(n,l,p){
   
     contColor3[p].style.color=inpColor3[p].value;
     contFont3[p].style.fontSize=inpFont3[p].value + "px";
-    if(window.innerWidth<837){
-        contFont1[n].style.fontSize=(inpFont1[n].value /12.35 )+ "vw" ;
-        contFont2[l].style.fontSize=(inpFont2[l].value  /12.35 )+ "vw";
-        contFont3[p].style.fontSize=(inpFont3[p].value /12.35 )+ "vw";
-        
-    }
+   
     
 
 }
@@ -107,9 +102,9 @@ function xEdit(n,l,p){
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
-    contFont1[n].innerHTML=info1;
-    contFont2[l].innerHTML=info2;
-    contFont3[p].innerHTML=info3;
+    contFont1[n].innerHTML=info1[n];
+    contFont2[l].innerHTML=info2[l];
+    contFont3[p].innerHTML=info3[p];
 
    /* contColor1[n].style.color=inpColor1[n].value;
     contColor2[l].style.color=inpColor2[l].value ;
@@ -128,7 +123,8 @@ function editar2(n){
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
-    info1=contFont1[n].innerHTML;
+    info1[n]=contFont1[n].innerHTML;
+    
 
     
 }
@@ -164,7 +160,8 @@ function xEdit2(n){
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
-    contFont1[n].innerHTML=info1;
+    contFont1[n].innerHTML=info1[n];
+   
     
     
     
@@ -186,8 +183,9 @@ function editar3(n,l){
     botonesXeY[n].style.display="inline-block";
     fontYColor[n].style.display='inline-block';
     editables[n].style.outline="#5C9F9E 1px solid"
-    info1=contFont1[n].innerHTML;
-    info2=contFont2[l].innerHTML;
+    info1[n]=contFont1[n].innerHTML;
+    info2[l]=contFont2[l].innerHTML;
+    
     
     
 }
@@ -224,8 +222,9 @@ function xEdit3(n,l){
     botonesXeY[n].style.display='none';
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
-    contFont1[n].innerHTML=info1;
-    contFont2[l].innerHTML=info2;
+    contFont1[n].innerHTML=info1[n];
+    contFont2[l].innerHTML=info2[l];
+    
    
     
     
