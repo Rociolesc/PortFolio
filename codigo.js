@@ -57,22 +57,48 @@ buttonCancelar.onclick = function(){
      
 };
 
-/*
-let perfil= document.getElementById("Perfil")
-const ubi= window.pageYOffset;
-window.onscroll=function (){
-    let ubi2 = window.pageYOffset;
-    let Ubicacion = window.pageYOffset; 
-
-    if (ubi<ubi2 ){
-        perfil.style.top="-150vh";
-        circuloFondo.style.opacity="0";
-        
-    }
-    if(ubi2 > (1000)){
-        console.log("Jeje")
-    }
-
+let nav=document.getElementById('nav')
+window.addEventListener('keydown',aparecerLogin);
+let m=0;
+function aparecerLogin(e){
     
+    if(e.keyCode == '76' && e.altKey == true ){
+    nav.style.right='0px';
+
+    };   
+    if (e.keyCode == '76' && e.ctrlKey == true ){
+        nav.style.right='-202px';
+    };  
+    
+};
+let Edit=document.querySelectorAll('#LogoEdit,.edit__perfil,.edit__F,.edit__F,.edit__F,.edit__H,.edit__H,.edit__H,.edit__H,.edit__PEspl');
+let userName=document.getElementById('idE');
+let pass=document.getElementById('password__1');
+let f=document.getElementById("form");
+
+function go(evt){
+    evt.preventDefault();
+    if ( userName.value=='Admin12'&& pass.value=='ArP2022' ){ 
+        
+           console.log('rrr')
+           
+        }
+        else{ 
+             alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+        } 
+} 
+
+let ubicacionPrincipal= window.pageYOffset; 
+const banner=document.getElementById("banner")
+window.onscroll=function(){
+    let desplazamiento=window.pageYOffset;
+    if(ubicacionPrincipal>=50){
+    banner.style.opacity='0'
+    fondoSec.style.marginTop='-75vh';
+    }
+    else {
+    banner.style.opacity='1'
+    fondoSec.style.marginTop='42vh';
+    }
+    ubicacionPrincipal=desplazamiento;
 }
-*/

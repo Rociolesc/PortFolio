@@ -1387,7 +1387,8 @@ html, body {
 	z-index: 800;
 	position: fixed;
 	height: 90px;
-	right: 0px;
+	right: -202px;
+	transition: all 1s;
 
 }
 .nav__ol{
@@ -1407,7 +1408,8 @@ html, body {
 .nav__li--redes{
     float: right;
 	position: absolute;
-	right:280px;
+	right:233px;
+	transition: all 1s;
 }
 .nav__li--redes a img{
     position: relative;
@@ -1475,13 +1477,13 @@ html, body {
 	color: #fff;
 	position: relative;
 	background: #5C9F9E;
-	right:100px ;
+	right:46px ;
 	top: 14px;
 	font-size: 20px;
 	height: 60px;
 	width: 150px;
 	float: right;
-	
+	transition: all 1s;
 	
 }
 header{
@@ -1569,9 +1571,8 @@ header{
 	position: relative;
 	justify-content: center;
 	top: 6em;
-	
-	
-	
+	transition: all 1s;
+	opacity: 1;
 
 }
 .banner__hijo {
@@ -1655,6 +1656,7 @@ header{
 	display: grid;
 	margin-top: 42vh;
 	justify-items: center;
+	transition:all 1s;
 	
 }
 .row{
@@ -2133,18 +2135,16 @@ header{
 -------------------------------------------------------------------------------------------------
 (botones de edit)------*/
 .edit__banner{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: -200px;
 	margin-left: 150px;
 	text-align: center;
-	
-	
 }
 .icon__edit{
 	width: 25px;
@@ -2164,7 +2164,7 @@ header{
 }
 .edit__banner-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	margin-left: 5px;
 	background: #1C1A1A;
@@ -2195,12 +2195,12 @@ position: absolute;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 10px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+	border: rgb(34, 243, 243) 3px solid;
+    border-radius: 90%; 
 }
 
 #editBanFont{
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: -20px;
 
 }
@@ -2209,7 +2209,7 @@ position: absolute;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: -20px;
@@ -2235,11 +2235,9 @@ position: absolute;
 }
 .edit__perfil-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
-	
 	background: #1C1A1A;
-	
 }
 
 .icon__X-perfil{
@@ -2268,7 +2266,7 @@ margin-left: -50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
+	border: rgb(34, 243, 243) 3px solid;
     border-radius: 90%;
 }
 #editPerColor2{
@@ -2278,7 +2276,7 @@ margin-left: -50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
+	border: rgb(34, 243, 243) 3px solid;
     border-radius: 90%;
 }
 #editPerColor3{
@@ -2288,21 +2286,21 @@ margin-left: -50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
+	border: rgb(34, 243, 243) 3px solid;
     border-radius: 90%;
 }
 #editPerFont{
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 
 }
 #editPerFont2{
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 
 }
 #editPerFont3{
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 
 }
@@ -2312,7 +2310,7 @@ margin-left: -50px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: -21px;
@@ -2342,7 +2340,7 @@ margin-left: -50px;
 }
 .edit__FotoPer-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2358,7 +2356,7 @@ margin-left: -100px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	top: -30px;
@@ -2385,7 +2383,7 @@ margin-left: -100px;
 }
 .edit__F-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2413,7 +2411,7 @@ margin-top: 50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
+	border: rgb(34, 243, 243) 3px solid;
     border-radius: 90%;
 }
 .edit__FColor2{
@@ -2425,14 +2423,13 @@ margin-top: 50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+    border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 .edit__FFont{
 	position: absolute;
 	top: 12px;
 	right: 115px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 35px;
 	height: 30px;
@@ -2441,7 +2438,7 @@ margin-top: 50px;
 	position: absolute;
 	right: -46px;
 	top:175px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 35px;
 	height: 30px;
@@ -2451,7 +2448,7 @@ margin-top: 50px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: -20px;
@@ -2478,7 +2475,7 @@ margin-top: 50px;
 }
 .edit__FImg-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2493,7 +2490,7 @@ margin-left: -100px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	top:-30px;
@@ -2518,7 +2515,7 @@ margin-left: -100px;
 }
 .edit__H-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 }
@@ -2545,15 +2542,14 @@ margin-left: -100px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+    border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 
 .edit__HFont{
 	position: absolute;
 	top: 110px;
 	right: 195px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
@@ -2575,15 +2571,14 @@ margin-left: -100px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+    border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 
 .edit__HRESFont{
 	position: absolute;
 	top: 110px;
 	right: 295px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
@@ -2605,15 +2600,14 @@ margin-left: -100px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+    border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 
 .edit__HProacFont{
 	position: absolute;
 	top: 110px;
 	right: 195px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
@@ -2635,32 +2629,30 @@ margin-left: -100px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 
 .edit__HInglesFont{
 	position: absolute;
 	top: 110px;
 	right: 195px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
 }
 .edit__FP{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: -60px;
 	right: -20px;
 	text-align: center;
 	z-index: 350;
-	float: right;
 	
 }
 .icon__edit-FP{
@@ -2671,7 +2663,7 @@ margin-left: -100px;
 	
 }
 .edit__FP-2{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	width: 50px;
 	top: -60px;
@@ -2681,7 +2673,7 @@ margin-left: -100px;
 }
 .edit__FP-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2696,7 +2688,7 @@ margin-left: 10px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	margin-top: 31px;
@@ -2725,7 +2717,7 @@ margin-left: 10px;
 }
 .edit__P-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2740,7 +2732,7 @@ margin-left: 0px;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
-	outline: rgb(34, 243, 243)3px solid;
+	outline: rgb(34, 243, 243) 3px solid;
 	width: 50px;
 	height: 50px;
 	top: -20px;
@@ -2777,7 +2769,7 @@ margin-left: 0px;
 }
 .edit__PEspl-2 img{
 	display: inline-block;
-	outline: rgb(34, 243, 243)3px solid ;
+	outline: rgb(34, 243, 243) 3px solid ;
 	border-radius: 90px;
 	background: #1C1A1A;
 	
@@ -2803,15 +2795,14 @@ margin-left: -50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
-    border-radius: 90%;
+border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 }
 
 .edit__ProyecFont{
 	position: absolute;
 	top: 58px;
 	right: 88px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
@@ -2826,7 +2817,7 @@ margin-left: -50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 	background: rgba(28, 26, 26);
-	border: rgb(34, 243, 243)3px solid;
+	border: rgb(34, 243, 243) 3px solid;
     border-radius: 90%;
 }
 
@@ -2834,7 +2825,7 @@ margin-left: -50px;
 	position: absolute;
 	top: 148px;
 	right: 88px;
-	border:rgb(34, 243, 243)3px solid;
+	border:rgb(34, 243, 243) 3px solid;
 	margin-left: 10px;
 	width: 40px;
 	height: 30px;
@@ -2845,13 +2836,6 @@ margin-left: -50px;
 		width: 353px;
 		
 	
-	}
-	.nav__li--inisioSesion{
-		right: 9vw;
-	}
-	.nav__li--redes{
-		right: 0;
-		margin-right: 206px;
 	}
 	#contEditBann{
 		margin-left: 0px;

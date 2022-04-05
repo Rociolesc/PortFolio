@@ -1,18 +1,3 @@
-/*const editBann= document.getElementById('contEditBann');
-const botXeY= document.getElementById('editBanner2');
-const  infoOriginal=document.getElementById('contEditBann').innerHTML;
-let info=document.getElementById('contEditBann').innerHTML;
-
-const colorYFont=document.getElementById('banner__circulo');
-let colorOrg= colorYFont.style.color='rgba(16, 255, 226, 1)';
-const inpColor=document.getElementById('editBanColor');
-const editColFont=document.getElementById('editColFont');
-let colorImp=inpColor.value;
-
-const inpFont=document.getElementById('editBanFont');
-let fontImp= inpFont.value;
-let fontOrg=  editBann.style.fontSize='70px';*/
-
 
 const editables=document.querySelectorAll('#contEditBann,#contEditPerfil,#contEditFormUtn,#contEditFormNac,#contEditFormArP,#contEditFormHResp,#contEditFormHResol,#contEditFormHProac,#contEditFormHIngles,#contEditFormProyecto');
 const botonEdit=document.querySelectorAll('#LogoEdit,.edit__perfil,.edit__F,.edit__F,.edit__F,.edit__H,.edit__H,.edit__H,.edit__H,.edit__PEspl');
@@ -40,21 +25,17 @@ const inpFont3=document.querySelectorAll('#editPerFont3')
 let info1=[];
 let info2=[];
 let info3=[];
-let colorInp1=null;
-let colorInp2=null;
-let colorInp3=null;
+let colorInp1=[];
+let colorInp2=[];
+let colorInp3=[];
 let fontInp1=null;
 let fontInp2=null;
 let fontInp3=null;
 /*
 let colorInp1=inpColor1.value;
 let verdura =['manzana,pera','limon']
-const inpColor=document.getElementById('editBanColor');*/
+const inpColor=document.getElementById('editBanColor');*/ 
 
-
-
-
-    
 function editar(n,l,p){
     editables[n].contentEditable="true";
     editables[n].disignMode='on';
@@ -65,8 +46,11 @@ function editar(n,l,p){
     info1[n]=contFont1[n].innerHTML;
     info2[l]=contFont2[l].innerHTML;
     info3[p]=contFont3[p].innerHTML;
-    
-}
+    colorInp1[n]=inpColor1[n].value;
+    colorInp2[l]=inpColor2[l].value;
+    colorInp3[p]=inpColor3[p].value;
+};
+
 function check(n,l,p){
     editables[n].contentEditable='false';
     editables[n].disignMode='off';
@@ -74,9 +58,6 @@ function check(n,l,p){
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
-   /* info1=contFont1[n].innerHTML;
-    info2=contFont2[l].innerHTML;
-    info3=contFont3[p].innerHTML;*/
 
     colorInp1=inpColor1[n].value;
     contColor1[n].style.color=colorInp1;
@@ -236,4 +217,4 @@ function xEdit3(n,l){
     contFont2[l].style.fontSize=inpFont2[l].value + "px";
     contFont3[p].style.fontSize=inpFont3[p].value + "px";
     */
-}
+};

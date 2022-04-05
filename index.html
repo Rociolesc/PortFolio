@@ -6,7 +6,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<link href="bootstrap-5.0.1-dist/css/bootstrap-reboot.min.css">
-	<script src="https://kit.fontawesome.com/d6a2821d59.js" crossorigin="anonymous"></script>
+	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -28,9 +28,9 @@
         <div class="firefly"></div>
 
         <header class="head" id="head">
-            <nav class="nav"  >
+            <nav class="nav" id="nav" >
                 <ol class="nav__ol" >
-                    <li class="nav__li--redes" >
+                    <li class="nav__li--redes" id="redes" >
                         <a href="#" class="linkedin" ><img href="#" src="logoLinkedin.png"></a>
                         <div class="sub__redes">
                             <a href="#" class="logGem"><img src="logoGmail.png"></a>
@@ -76,16 +76,16 @@
 			    
 			</div>
 			<div class="banner__ingreso--de--dato" id="sesion">
-				<form class="datos__ol" method="post">
+				<form class="datos__ol" method="post" id="form" name="form">
                     <div class="user">
 					<label for="idE" class="form__label">Username</label>
-					<input id="idE" class="inp name" type="text" required=""><br>
+					<input name='login' id="idE" class="inp name" type="text" required=""><br>
                     </div>
                     <div class="pass">
                         <label for="idE" class="form__label">Correo</label>
-					<input  id="password__1" class="inp password" type="password"  required=""> <br>
+					<input name="password" id="password__1" class="inp password" type="password"  required=""> <br>
                     </div>
-					<input  class="botones__datos	submit" type="submit">
+					<input id="sub" class="botones__datos	submit" onclick="go()" onclick="def(e)" type="submit">
 				</form>
                 <button class="botones__datos" id="cancelar__datos">Cancelar</button>
                 
@@ -445,5 +445,8 @@
         <script src="codigo.js"></script>
         <script src="contentEditable.js"></script>
         <script src="editDeImagentes.js"></script>
+
+       
+
     </body>
 </html>
