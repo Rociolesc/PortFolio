@@ -1972,11 +1972,27 @@ header{
 	width: 38.5vw;
 	height: 26px;
 	border-radius: 20px;
-	
+}
 
+#rango{
+	display: none;
+    position: absolute;
+    margin-top: -40px;
+    width: 25vw;
+    right: 126px;
+}
+#ranNumero{
+	display: none;
+	position: absolute;
+    margin-top: -44px;
+    right: 78px;
+    background: rgb(22 22 21);
+    color: white;
+    width: 42px;
+    padding: 3px 0px 3px 0px;
+    border: #22f3f3 1px solid;
 }
 .Resol__cont{
-	
 	width: 300px;
 	height: 60px;
 	border-radius: 30px;
@@ -2135,7 +2151,7 @@ header{
 -------------------------------------------------------------------------------------------------
 (botones de edit)------*/
 .edit__banner{
-	display: none;
+	display: inline-block;
 	position: absolute;
 	border-radius: 90% ;
 	background:rgba(28, 26, 26);
@@ -2663,7 +2679,7 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	
 }
 .edit__FP-2{
-	display: inline-block;
+	display: none;
 	position: absolute;
 	width: 50px;
 	top: -60px;
@@ -2707,7 +2723,7 @@ margin-left: 10px;
 	
 }
 .edit__P-2{
-	display:inline-block;
+	display:none;
 	position: absolute;
 	width: 50px;
 	top: 12px;

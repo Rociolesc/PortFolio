@@ -277,15 +277,19 @@
                         </div>
                     </div>
                     <div class="porc__ext">
-                        <div class="edit__FP">
+                        <div class="edit__FP" onclick="editPorc()">
                             <img class="icon__edit-FP" src="editar.png">
                         </div>
-                        <div class="edit__FP-2">
+                        <div class="edit__FP-2" id="editHrespPorc-2">
                             <img class="icon__palomita-FP"  src="cheque.png">
                             <img class="icon__X-FP" src="eliminar.png">
                         </div>
+                        <div >
+                            <input type="range" id="rango" value="0" min="0" max="100">
+                            <span id="ranNumero">0%</span>
+                        </div>
                         
-                        <div class="porc__int"></div>
+                        <div class="porc__int" id="porcInt"></div>
                     </div>
 
 
@@ -445,7 +449,7 @@
         <script src="codigo.js"></script>
         <script src="contentEditable.js"></script>
         <script src="editDeImagentes.js"></script>
-
+        <script src="rangoDeHabilidades.js"></script>
        
 
     </body>

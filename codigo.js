@@ -88,17 +88,3 @@ function go(evt){
         } 
 } 
 
-let ubicacionPrincipal= window.pageYOffset; 
-const banner=document.getElementById("banner")
-window.onscroll=function(){
-    let desplazamiento=window.pageYOffset;
-    if(ubicacionPrincipal>=50){
-    banner.style.opacity='0'
-    fondoSec.style.marginTop='-75vh';
-    }
-    else {
-    banner.style.opacity='1'
-    fondoSec.style.marginTop='42vh';
-    }
-    ubicacionPrincipal=desplazamiento;
-}
