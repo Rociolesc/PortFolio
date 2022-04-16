@@ -31,10 +31,6 @@ let colorInp3=[];
 let fontInp1=null;
 let fontInp2=null;
 let fontInp3=null;
-/*
-let colorInp1=inpColor1.value;
-let verdura =['manzana,pera','limon']
-const inpColor=document.getElementById('editBanColor');*/ 
 
 function editar(n,l,p){
     editables[n].contentEditable="true";
@@ -86,15 +82,6 @@ function xEdit(n,l,p){
     contFont1[n].innerHTML=info1[n];
     contFont2[l].innerHTML=info2[l];
     contFont3[p].innerHTML=info3[p];
-
-   /* contColor1[n].style.color=inpColor1[n].value;
-    contColor2[l].style.color=inpColor2[l].value ;
-    contColor3[p].style.color=colorInp3;
-
-    contFont1[n].style.fontSize=inpFont1[n].value;+ "px";
-    contFont2[l].style.fontSize=inpFont2[l].value + "px";
-    contFont3[p].style.fontSize=inpFont3[p].value + "px";
-    */
 }
 
 function editar2(n){
@@ -116,10 +103,7 @@ function check2(n){
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
-   /* info1=contFont1[n].innerHTML;
-    info2=contFont2[l].innerHTML;
-    info3=contFont3[p].innerHTML;*/
-
+   
     colorInp1=inpColor1[n].value;
     contColor1[n].style.color=colorInp1;
     contFont1[n].style.fontSize=inpFont1[n].value + "px";
@@ -142,18 +126,6 @@ function xEdit2(n){
     fontYColor[n].style.display='none';
     editables[n].style.outline="none"; 
     contFont1[n].innerHTML=info1[n];
-   
-    
-    
-    
-   /* contColor1[n].style.color=inpColor1[n].value;
-    contColor2[l].style.color=inpColor2[l].value ;
-    contColor3[p].style.color=colorInp3;
-
-    contFont1[n].style.fontSize=inpFont1[n].value;+ "px";
-    contFont2[l].style.fontSize=inpFont2[l].value + "px";
-    contFont3[p].style.fontSize=inpFont3[p].value + "px";
-    */
 }
 
 
@@ -177,9 +149,6 @@ function check3(n,l){
     botonesXeY[n].style.display='none';
     editables[n].style.outline="none"
     fontYColor[n].style.display='none';
-   /* info1=contFont1[n].innerHTML;
-    info2=contFont2[l].innerHTML;
-    info3=contFont3[p].innerHTML;*/
 
     colorInp1=inpColor1[n].value;
     contColor1[n].style.color=colorInp1;
@@ -205,16 +174,4 @@ function xEdit3(n,l){
     editables[n].style.outline="none"; 
     contFont1[n].innerHTML=info1[n];
     contFont2[l].innerHTML=info2[l];
-    
-   
-    
-    
-   /* contColor1[n].style.color=inpColor1[n].value;
-    contColor2[l].style.color=inpColor2[l].value ;
-    contColor3[p].style.color=colorInp3;
-
-    contFont1[n].style.fontSize=inpFont1[n].value;+ "px";
-    contFont2[l].style.fontSize=inpFont2[l].value + "px";
-    contFont3[p].style.fontSize=inpFont3[p].value + "px";
-    */
 };

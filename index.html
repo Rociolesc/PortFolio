@@ -54,9 +54,30 @@
                     <a href="#Proyecto"><li class="li__menu  ">Proyecto</li></a>
                     <a href="#Contacto"><li class="li__menu  ">Contacto</li></a>
                 </ul>
-                <button class="marker" id="button__menu"> Menu</button>
+                <button class="marker" id="button__menu" onclick="menuDesp()"> Menu</button>
                 
             </div>
+
+
+
+
+            <div class="menu__cont2" id="menu2">
+                <ul class="menu2">
+                    <li class="nav__li--logoArg2">
+                        <img src="APLogo-20-20.png">
+                    </li>
+                    <a href="#Perfil"><li class="li__menu2  ">Perfil</li></a>
+                    <a href="#Formacion"><li class="li__menu2  ">Formacion</li></a>
+                    <a href="#Habilidades"><li class="li__menu2  habilidades2">Habilidades</li></a>
+                    <a href="#Proyecto"><li class="li__menu2  ">Proyecto</li></a>
+                    <a href="#Contacto"><li class="li__menu2  ">Contacto</li></a>
+                </ul>
+                <button class="marker2" id="button__menu2" onclick="menuDesp()"> Menu</button>
+                
+            </div>
+
+
+
             <a href="#top"id="topBanner"><img src="flechas2.png"></a>
         </header>
         <div class="banner__conten" id="banner">
@@ -99,16 +120,16 @@
                     
                    <div class="linea__inicio" id="linea"></div>
                     <div class="foto__cont" ><img class="foto__perfil" src="foto.png">
-                        <div class="edit__FotoPer" id="editFotoPerf" onclick="editFoto1(0)">
+                        <div class="edit__FotoPer" id="editFotoPerf">
                             <img class="icon__edit-foto" src="editar.png">
                         </div>
                         <div class="edit__FotoPer-2" id="editFotoPerf2" >
-                            <img class="icon__palomita-foto"  onclick="checkFoto1(0)" src="cheque.png">
-                            <img class="icon__X-foto" onclick="xEditFoto1(0)" src="eliminar.png">
+                            <img class="icon__palomita-foto"   src="cheque.png">
+                            <img class="icon__X-foto"  src="eliminar.png">
                         </div>
-                        <div class="editFotoPerfil" id="contFile">
+                      <!--- <div class="editFotoPerfil" id="contFile">
                             <input type="file" id="inpFile" >
-                        </div>
+                        </div> ---> 
                     </div>
                         
                     <div class="cont__info-perfil"> 
@@ -145,19 +166,19 @@
                <div class="cont__img" >
                     <div class="imgUtn__cont" id ="img__formacion" >
                          <img src="UTN_logo.jpg" class="utn__logo">
-                        <div class="edit__FImg" id="editFotoFUtn" onclick="editFoto(1)">
+                        <div class="edit__FImg" id="editFotoFUtn">
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
                         <div class="edit__FImg-2" id="editFotoFUtn2">
-                            <img class="icon__palomita-FImg" onclick="checkFoto(1)" src="cheque.png">
-                            <img class="icon__X-FImg" onclick="xEditFoto(1)" src="eliminar.png">
+                            <img class="icon__palomita-FImg"  src="cheque.png">
+                            <img class="icon__X-FImg" src="eliminar.png">
                         </div>
                         
                     </div>
                 
-                    <div class="editFotoFUtn   editFotoF" id="contFileFUtn">
+                    <!--<div class="editFotoFUtn   editFotoF" id="contFileFUtn">
                             <input type="file" id="inpFileFUtn" class="inpFile">
-                    </div>
+                    </div>--->
                 </div>
                     <div class="cont__info-utn"> 
                         <div id="contEditFormUtn">
@@ -182,19 +203,19 @@
                 <div class="cont__img" >
                     <div class="imgNacional__cont" id ="img__formacion">
                         <img class="imgNac" src="logoNacional.png">
-                        <div class="edit__FImg" id="editFotoFNac" onclick="editFoto(2)">
+                        <div class="edit__FImg" id="editFotoFNac" >
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
                         <div class="edit__FImg-2" id="editFotoFNac2">
-                            <img class="icon__palomita-FImg"  onclick="checkFoto(2)"  src="cheque.png">
-                            <img class="icon__X-FImg" onclick="xEditFoto(2)" src="eliminar.png">
+                            <img class="icon__palomita-FImg"   src="cheque.png">
+                            <img class="icon__X-FImg"  src="eliminar.png">
                         </div>
                     </div>        
                 
 
-                    <div class="editFotoFNac   editFotoF" id="contFileFNac">
+                   <!--- <div class="editFotoFNac   editFotoF" id="contFileFNac">
                             <input type="file" id="inpFileFNac" class="inpFile" >
-                    </div>
+                    </div>--->
                 </div>
                     <div class="cont__info-nac">
                         <div id="contEditFormNac">
@@ -220,18 +241,18 @@
                 <div class="cont__img" >
                     <div class="imgArP__cont" id ="img__formacion">
                         <img class="imgArP" src="APLogo-20-20.png">
-                        <div class="edit__FImg" id="editFotoFArP" onclick="editFoto(3)">
+                        <div class="edit__FImg" id="editFotoFArP" >
                             <img class="icon__edit-FImg" src="editar.png">
                         </div>
                         <div class="edit__FImg-2" id="editFotoFArP2">
-                            <img class="icon__palomita-FImg"  onclick="checkFoto(3)" src="cheque.png">
-                            <img class="icon__X-FImg" onclick="xEditFoto(3)" src="eliminar.png">
+                            <img class="icon__palomita-FImg"   src="cheque.png">
+                            <img class="icon__X-FImg"  src="eliminar.png">
                         </div> 
                     </div>
                 
-                    <div class="editFotoFArP   editFotoF" id="contFileFArP">
+                   <!--- <div class="editFotoFArP   editFotoF" id="contFileFArP">
                             <input type="file" id="inpFileFArP" class="inpFile">
-                    </div>
+                    </div>--->
                 </div>
                     <div class="cont__info-ArP">
                         <div id="contEditFormArP">
@@ -260,8 +281,8 @@
                     <div class="linea" id="linea"></div>
 
                     <div class="Resp__cont" >
-                        <div id="contEditFormHResp">
-                        <p id="colorFontHResp1">Responsabilidad</p>
+                        <div id="contEditFormHResp" class="contEditFormHResp">
+                        <p id="colorFontHResp1"class="colorFontHResp1">Responsabilidad</p>
                         </div>
                         <div class="edit__H"  onclick="editar2(5)" >
                             <img class='icon__edit-H ' src="editar.png">
@@ -277,16 +298,16 @@
                         </div>
                     </div>
                     <div class="porc__ext">
-                        <div class="edit__FP" onclick="editPorc()">
+                        <div class="edit__FP" id="editHrespPorc" onclick="editPorc(0)">
                             <img class="icon__edit-FP" src="editar.png">
                         </div>
                         <div class="edit__FP-2" id="editHrespPorc-2">
-                            <img class="icon__palomita-FP"  src="cheque.png">
-                            <img class="icon__X-FP" src="eliminar.png">
+                            <img class="icon__palomita-FP" onclick="checkPorc(0)"src="cheque.png">
+                            <img class="icon__X-FP" onclick="xPorc(0)" src="eliminar.png">
                         </div>
                         <div >
-                            <input type="range" id="rango" value="0" min="0" max="100">
-                            <span id="ranNumero">0%</span>
+                            <input type="range" class="rango"id="rango" value="0" min="0" max="100">
+                            <span class="ran__numero" id="ranNumero">0%</span>
                         </div>
                         
                         <div class="porc__int" id="porcInt"></div>
@@ -294,8 +315,8 @@
 
 
                     <div class="Resol__cont" >
-                        <div id="contEditFormHResol">
-                         <p id="colorFontHResol1">Resolucion de problemas</p>
+                        <div id="contEditFormHResol"class="contEditFormHResol">
+                         <p id="colorFontHResol1"class="colorFontHResol1">Resolucion de problemas</p>
                         </div>
                         <div class="edit__H" onclick="editar2(6)">
                             <img class="icon__edit-H "  src="editar.png">
@@ -311,20 +332,24 @@
                         </div>
                     </div>
                     <div class="porc__ext">
-                        <div class="edit__FP">
+                        <div class="edit__FP" id="editHresolPorc"onclick="editPorc(1)">
                             <img class="icon__edit-FP" src="editar.png">
                         </div>
-                        <div class="edit__FP-2">
-                            <img class="icon__palomita-FP"  src="cheque.png">
-                            <img class="icon__X-FP" src="eliminar.png">
+                        <div class="edit__FP-2" id="editHresolPorc-2">
+                            <img class="icon__palomita-FP" onclick="checkPorc(1)" src="cheque.png">
+                            <img class="icon__X-FP"onclick="xPorc(1)" src="eliminar.png">
                         </div>
-                        <div class="porc__int"></div>
+                        <div >
+                            <input type="range" class="rango"id="rangoReso" value="0" min="0" max="100">
+                            <span class="ran__numero" id="ranNumeroReso">0%</span>
+                        </div>
+                        <div class="porc__int" id="porcIntResol"></div>
                     </div>
 
 
                     <div class="Proac__cont"  >
-                        <div id="contEditFormHProac">
-                            <p id="colorFontHProac1">Proactividad</p>
+                        <div id="contEditFormHProac" class="contEditFormHProac">
+                            <p id="colorFontHProac1"class="colorFontHProac1">Proactividad</p>
                         </div>
                         <div class="edit__H" onclick="editar2(7)">
                             <img class="icon__edit-H" src="editar.png">
@@ -340,20 +365,24 @@
                         </div>
                     </div>
                     <div class="porc__ext">
-                        <div class="edit__FP">
+                        <div class="edit__FP" id="editHproacPorc"onclick="editPorc(2)">
                             <img class="icon__edit-FP" src="editar.png">
                         </div>
-                        <div class="edit__FP-2">
-                            <img class="icon__palomita-FP"  src="cheque.png">
-                            <img class="icon__X-FP" src="eliminar.png">
+                        <div class="edit__FP-2" id="editHproacPorc-2">
+                            <img class="icon__palomita-FP" onclick="checkPorc(2)" src="cheque.png">
+                            <img class="icon__X-FP"onclick="xPorc(2)" src="eliminar.png">
                         </div>
-                        <div class="porc__int"></div>
+                        <div >
+                            <input type="range" class="rango"id="rangoPro" value="0" min="0" max="100">
+                            <span class="ran__numero" id="ranNumeroPro">0%</span>
+                        </div>
+                        <div class="porc__int"id="porcIntProac"></div>
                     </div>
 
 
                     <div class="Ingles__cont" >
-                        <div id="contEditFormHIngles">
-                            <p id="colorFontHIngles1">Ingles</p>
+                        <div id="contEditFormHIngles"class="contEditFormHIngles">
+                            <p id="colorFontHIngles1"class="colorFontHIngles1">Ingles</p>
                         </div>    
                         <div class="edit__H" onclick="editar2(8)">
                             <img class="icon__edit-H" src="editar.png">
@@ -369,14 +398,18 @@
                         </div>
                     </div>
                     <div class="porc__ext">
-                        <div class="edit__FP">
+                        <div class="edit__FP"id="editHingPorc"onclick="editPorc(3)">
                             <img class="icon__edit-FP" src="editar.png">
                         </div>
-                        <div class="edit__FP-2">
-                            <img class="icon__palomita-FP"  src="cheque.png">
-                            <img class="icon__X-FP" src="eliminar.png">
+                        <div class="edit__FP-2"id="editHingPorc-2">
+                            <img class="icon__palomita-FP" onclick="checkPorc(3)" src="cheque.png">
+                            <img class="icon__X-FP"onclick="xPorc(3)" src="eliminar.png">
                         </div>
-                        <div class="porc__int"></div>
+                        <div >
+                            <input type="range" class="rango"id="rangoIng" value="0" min="0" max="100">
+                            <span class="ran__numero" id="ranNumeroIng">0%</span>
+                        </div>
+                        <div class="porc__int" id="porcIntIng"></div>
                     </div>
                 </article>
             </div>

@@ -1,21 +1,38 @@
 const buttonMenu = document.getElementById("button__menu");
-const menu = document.getElementById("menu");
+const menu = document.querySelectorAll("#menu,#menu2");
 const topBanner = document.getElementById("topBanner");
 let  click=0;
-buttonMenu.onclick = function(){
+let click2=0;
+function menuDesp(){
     
-
+ if(window.innerHeight>592){
     if ( click == 0){
-    menu.style.left="0px";
-    topBanner.style.left="220px";
+        
+        menu[0].style.left="0px";
+        topBanner.style.left="220px";
 	click=1;
-	 }
+        }
     else {
-        menu.style.left="-200px";
+        menu[0].style.left="-200px";
         topBanner.style.left="-205px";
         
         click=0;
      }
+    }
+if(window.innerHeight<592){
+    if ( click2 == 0){
+        menu[1].style.top="0px";
+        topBanner.style.left="12px";
+	click2=1;
+        }
+    else {
+        menu[1].style.top="-182px";
+        topBanner.style.left="-65px";
+        
+        click2=0;
+     }
+    
+    }
      
 };
 
@@ -25,30 +42,48 @@ let  sesion= document.getElementById("sesion");
 let buttonCancelar= document.getElementById("cancelar__datos")
 let elementosFondo= document.getElementById("head")
 let fondoSec= document.getElementById("sec")
-var  click2=0;
+var  click3=0;
 buttonInisioSesion.onclick = function(){
-    if ( click2 == 0){
+    if(Window.innerHeight>592){
+    if ( click3 == 0){
+        
     sesion.style.opacity="1";
     circuloFondo.style.opacity="0";
     sesion.style.top="80px"
     elementosFondo.style.opacity="0"
     fondoSec.style.opacity="0"
-        click2 =1;
+        click3 =1;
+        
+	 }
+    else{
+        console.log("none")
+    }}
+    else{
+        if ( click3 == 0){
+    sesion.style.opacity="1";
+    circuloFondo.style.opacity="0";
+    sesion.style.top="36px"
+    elementosFondo.style.opacity="0"
+    fondoSec.style.opacity="0"
+        click3 =1;
+        
 	 }
     else{
         console.log("none")
     }
-     
+    }
 };
+     
+
 
 buttonCancelar.onclick = function(){
-    if ( click2 == 1){
+    if ( click3 == 1){
     sesion.style.opacity="0";
     circuloFondo.style.opacity="1";
     sesion.style.top="-500px"
     elementosFondo.style.opacity="1"
     fondoSec.style.opacity="1"
-    click2=0;
+    click3=0;
     
 	 }
     else{
@@ -56,7 +91,7 @@ buttonCancelar.onclick = function(){
      };
      
 };
-
+/*
 let nav=document.getElementById('nav')
 window.addEventListener('keydown',aparecerLogin);
 let m=0;
@@ -87,4 +122,4 @@ function go(evt){
              alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
         } 
 } 
-
+*/

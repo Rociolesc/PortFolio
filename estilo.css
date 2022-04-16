@@ -1387,7 +1387,7 @@ html, body {
 	z-index: 800;
 	position: fixed;
 	height: 90px;
-	right: -202px;
+	right: 0px;
 	transition: all 1s;
 
 }
@@ -1490,6 +1490,9 @@ header{
 	position: absolute;
 	top: 0;
 }
+.menu__cont2{
+	display: none;
+}
 .menu__cont{
 	background: rgb(66,62,61);
 	position: fixed;
@@ -1514,11 +1517,12 @@ header{
 .li__menu{
     display: inline-block;
 	background: rgb(86,83,82);
-	padding: 25px 0px 25px 30px;
+	padding: 29px 0px 29px 0px;
 	margin-top: 5px;
-	
 	z-index:55;
+	text-align: center;
 	width: 200px;
+	height: 94px;
 	color: rgba(16, 255, 226, 1);
 	font-size: 30px;
 }
@@ -1947,12 +1951,12 @@ header{
 	z-index: 400;
 	margin-left: 40px;
 }
-#colorFontHResp1{
+.colorFontHResp1{
 	font-size: 23px;
 	padding-top: 16px;
-	color: rgb(23,214,195);
+	color: rgb(221,221,221);
 }
-#contEditFormHResp{
+.contEditFormHResp{
 	height: 60px;
 	overflow-y: auto;
 }
@@ -1974,14 +1978,14 @@ header{
 	border-radius: 20px;
 }
 
-#rango{
+.rango{
 	display: none;
     position: absolute;
     margin-top: -40px;
     width: 25vw;
     right: 126px;
 }
-#ranNumero{
+.ran__numero{
 	display: none;
 	position: absolute;
     margin-top: -44px;
@@ -2003,14 +2007,14 @@ header{
 	z-index: 400;
 	margin-left: 40px;
 }
-#contEditFormHResol{
+.contEditFormHResol{
 	height: 60px;
 	overflow-y: auto;
 }
-#colorFontHResol1{
+.colorFontHResol1{
 	font-size: 23px;
 	padding-top: 16px;
-	color:rgb(23,214,195);
+	color:rgb(221,221,221);
 }
 .aa{
 	width: 85;
@@ -2032,14 +2036,14 @@ header{
 	z-index: 400;
 	margin-left: 40px;
 }
-#contEditFormHProac{
+.contEditFormHProac{
 	height: 60px;
 	overflow-y: auto;
 }
-#colorFontHProac1{
+.colorFontHProac1{
 	font-size: 23px;
 	padding-top: 16px;
-	color: rgb(23,214,195);
+	color: rgb(221,221,221);
 }
 
 .Ingles__cont{
@@ -2054,14 +2058,14 @@ header{
 	z-index: 400;
 	margin-left: 40px;
 }
-#contEditFormHIngles{
+.contEditFormHIngles{
 	height: 60px;
 	overflow-y: auto;
 }
-#colorFontHIngles1{
+.colorFontHIngles1{
 	font-size: 23px;
 	padding-top: 16px;
-	color: rgb(23,214,195);
+	color: rgb(221,221,221);
 }
 
 
@@ -2873,12 +2877,13 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 		margin-left: -37vw;
 	}
 	#editBanner2 {
-		margin-top: -375px;
-		margin-left: -166px;
+		margin-top: -70vw;
+		margin-left: -37vw;
 	}
 	#editColFontBanner {
-		margin-top: -414px;
-		margin-left: -120px;
+			margin-top: -82vw;
+			right: 60vw;
+		
 	}
 	.banner__ingreso--de--dato{
 		width: 80vw;
@@ -2921,8 +2926,9 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	left:-40px;
 }
 .edit__banner-inp{
-	margin-top: -300px;
-	margin-left: -120px;
+	margin-top: -309px;
+    right: 57vw;
+}
 }
 #editBanFont{
 	position: absolute;
@@ -3253,4 +3259,87 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	right: 0;
 	left: -25px;
 }
+
+@media only screen and (max-height:592px){
+	.menu__cont{
+		display:none;
+	}
+	.menu__cont2{
+		display: inline-block;
+		background: rgb(66,62,61);
+		position: fixed;
+		width:100vw;
+		left: 0px;
+		height: 183px;
+		z-index: 850;
+		top:-182px;
+	}
+	.menu2{
+		top:0px;	
+		position: relative;
+		list-style: none;
+		background:	rgb(66,62,61);
+		z-index:849;
+		width: 100vw;
+		height: 183px;
+		
+	}
+	.menu2 a{
+		text-decoration: none;
+	}
+	.li__menu2{
+		display: inline-block;
+		background: rgb(86,83,82);
+		padding: 29px 0px 29px 0px;
+		margin-top: 5px;
+		z-index:55;
+		text-align: center;
+		width: 19.5vw;
+		height: 83px;
+		color: rgba(16, 255, 226, 1);
+		font-size: 3.5vw;
+	}
+	.nav__li--logoArg2 img{
+		position: relative;
+		height: 90px;
+		width: 180px;
+		
+		z-index: 10;
+	}
+	
+	.marker2{
+		display: inline-block;
+		background: rgb(66,62,61);
+		color: aliceblue;
+		position: absolute;
+		text-align: center;
+		width: 100px;
+		padding: 24px 0px 10px 0px;
+		border-radius: 30px;
+		top: 161px;
+		left: 11px;
+		transform: rotate(0deg);
+		z-index:848;
+		font-size: 25px;
+		
+	}
+
+	
+	.li__menu2:hover{
+		background: rgb(121, 116, 115);
+		height: 87px;
+		
+	}
+	.banner__ingreso--de--dato{
+		height: 84vh;
+    	width: 568px;
+	}
+	.inp {
+		width: 297px;
+		height: 30px;
+	}
+	#cancelar__datos {
+		margin-left: 284px;
+		
+	}
 }

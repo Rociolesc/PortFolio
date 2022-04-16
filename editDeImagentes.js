@@ -26,7 +26,7 @@ function xEditFoto(n){
     contFile[n].style.width="0vw";
     contFile[n].style.paddingLeft="0px";
     inpFile[n].style.width="0px";
-}*/
+}
 function editFoto1(n){
 
     if (window.innerWidth< 837){
@@ -192,4 +192,4 @@ function xEditFoto(n){
     inpFile[n].style.transition="all 0.5s";
 
     }
-}
+}*/
