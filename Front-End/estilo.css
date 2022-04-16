@@ -13,7 +13,7 @@ html, body {
 }
   
   body {
-	background-image: url(fondo__bosque.jpg);
+	background-image: url(imagenes/fondo__bosque.jpg);
 	background-size: cover;
 	background-attachment: fixed;
   }
@@ -1551,7 +1551,7 @@ header{
 	
 }
 #topBanner{
-	top: 90vh;
+	top: 84vh;
 	left: -220px;
 	position: fixed;
 	background:rgb(66,62,61);
@@ -1658,7 +1658,7 @@ header{
 
 .container-lg{
 	display: grid;
-	margin-top: 42vh;
+	margin-top: 54vh;
 	justify-items: center;
 	transition:all 1s;
 	
@@ -3341,5 +3341,11 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	#cancelar__datos {
 		margin-left: 284px;
 		
+	}
+}
+@media only screen and (max-width:639px){
+	.li__menu2 {
+		width: 18.9vw;
+		font-size: 4vw;
 	}
 }
