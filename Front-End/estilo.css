@@ -2925,7 +2925,6 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	margin-top: -309px;
     right: 57vw;
 }
-}
 #editBanFont{
 	position: absolute;
 	margin-top: -76.5px;
@@ -3255,7 +3254,7 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	right: 0;
 	left: -25px;
 }
-
+}
 @media only screen and (max-height:592px){
 	.menu__cont{
 		display:none;
