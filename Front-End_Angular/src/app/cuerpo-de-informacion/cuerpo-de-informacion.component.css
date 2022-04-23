@@ -1,0 +1,23 @@
+.sec{
+	display: grid;
+	margin-top: 54vh;
+	justify-items: center;
+	transition:all 1s;
+	text-align: center;
+	border: blue 3px solid;
+}
+.row{
+	width:70vw ;
+	height:776px ;
+	background:rgb(201, 10, 10);
+	position:relative;
+	z-index:301;
+	left: 0;
+}
+@media only screen and (max-width:837px){
+
+.row{
+	width: 100%;
+	
+}
+}
