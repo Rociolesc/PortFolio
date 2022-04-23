@@ -2850,7 +2850,7 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	width: 40px;
 	height: 30px;
 }
-
+}
 @media only screen and (max-width:508px){
 	.nav{
 		width: 353px;
@@ -2928,7 +2928,6 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 .edit__banner-inp{
 	margin-top: -309px;
     right: 57vw;
-}
 }
 #editBanFont{
 	position: absolute;
@@ -3259,7 +3258,7 @@ border: rgb(34, 243, 243) 3px solid;    border-radius: 90%;
 	right: 0;
 	left: -25px;
 }
-
+}
 @media only screen and (max-height:592px){
 	.menu__cont{
 		display:none;
